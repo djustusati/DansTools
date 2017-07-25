@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\Tools</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/ADODB.dll">
+      <publishTime>09/19/2007 17:21:00</publishTime>
+    </File>
+    <File Include="bin/AjaxControlToolkit.dll">
+      <publishTime>08/28/2007 14:01:04</publishTime>
+    </File>
+    <File Include="bin/DansTools.dll">
+      <publishTime>06/26/2017 15:35:21</publishTime>
+    </File>
+    <File Include="bin/DansTools.pdb">
+      <publishTime>06/26/2017 15:35:21</publishTime>
+    </File>
+    <File Include="bin/DansTools.xml">
+      <publishTime>06/26/2017 15:35:20</publishTime>
+    </File>
+    <File Include="bin/de/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 04:26:06</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>11/13/2013 11:22:13</publishTime>
+    </File>
+    <File Include="bin/es/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 04:25:54</publishTime>
+    </File>
+    <File Include="bin/fr/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 04:27:18</publishTime>
+    </File>
+    <File Include="bin/it/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 04:26:02</publishTime>
+    </File>
+    <File Include="bin/ja/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 04:25:22</publishTime>
+    </File>
+    <File Include="bin/ko/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 04:27:16</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Build.Utilities.v3.5.dll">
+      <publishTime>05/29/2015 21:06:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.Common.dll">
+      <publishTime>07/29/2008 14:09:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.ReportViewer.WebForms.dll">
+      <publishTime>07/29/2008 14:09:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.SqlServer.Types.dll">
+      <publishTime>02/21/2014 04:28:46</publishTime>
+    </File>
+    <File Include="bin/pt/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 04:25:24</publishTime>
+    </File>
+    <File Include="bin/ReportViewer.dll">
+      <publishTime>10/18/2007 09:06:22</publishTime>
+    </File>
+    <File Include="bin/ru/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 04:25:46</publishTime>
+    </File>
+    <File Include="bin/zh-Hans/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 04:27:58</publishTime>
+    </File>
+    <File Include="bin/zh-Hant/Microsoft.SqlServer.Types.resources.dll">
+      <publishTime>02/21/2014 04:28:10</publishTime>
+    </File>
+    <File Include="Default.aspx">
+      <publishTime>04/16/2008 13:37:14</publishTime>
+    </File>
+    <File Include="geocode/geocode.aspx">
+      <publishTime>09/04/2013 12:54:04</publishTime>
+    </File>
+    <File Include="geocode/Geocode.html">
+      <publishTime>09/04/2013 12:10:03</publishTime>
+    </File>
+    <File Include="geocode/geocoding.aspx">
+      <publishTime>09/12/2008 10:58:25</publishTime>
+    </File>
+    <File Include="images/blue_yellow_fad.jpg">
+      <publishTime>04/30/2008 14:56:12</publishTime>
+    </File>
+    <File Include="images/find.png">
+      <publishTime>04/16/2008 12:04:52</publishTime>
+    </File>
+    <File Include="images/RSSpinner.gif">
+      <publishTime>05/01/2008 12:16:08</publishTime>
+    </File>
+    <File Include="images/Spinner.gif">
+      <publishTime>05/01/2008 12:16:08</publishTime>
+    </File>
+    <File Include="images/table_add.png">
+      <publishTime>04/16/2008 15:06:28</publishTime>
+    </File>
+    <File Include="masterPages/masterA.Master">
+      <publishTime>08/11/2014 13:40:43</publishTime>
+    </File>
+    <File Include="menueditor.aspx">
+      <publishTime>10/15/2013 15:24:05</publishTime>
+    </File>
+    <File Include="MetrixDataModel/MetrixWeb_Prod.edmx.diagram">
+      <publishTime>12/10/2013 16:21:15</publishTime>
+    </File>
+    <File Include="MetrixStuff/BullhornLookup.aspx">
+      <publishTime>02/03/2017 15:14:41</publishTime>
+    </File>
+    <File Include="MetrixStuff/EmployeeLookup.aspx">
+      <publishTime>02/14/2017 09:16:10</publishTime>
+    </File>
+    <File Include="MetrixStuff/MissingSurveySessionLookup.aspx">
+      <publishTime>06/09/2014 14:13:19</publishTime>
+    </File>
+    <File Include="MetrixStuff/RecapDcrResearch.aspx">
+      <publishTime>11/17/2014 12:18:28</publishTime>
+    </File>
+    <File Include="MetrixStuff/TestBullhornLookup.aspx">
+      <publishTime>01/30/2014 10:55:12</publishTime>
+    </File>
+    <File Include="My Project/DataSources/System.Data.DataSet.datasource">
+      <publishTime>10/23/2013 13:36:43</publishTime>
+    </File>
+    <File Include="othertests/b.aspx">
+      <publishTime>04/30/2008 10:54:20</publishTime>
+    </File>
+    <File Include="othertests/divpopup.aspx">
+      <publishTime>01/07/2013 17:03:08</publishTime>
+    </File>
+    <File Include="othertests/divpopupcontent.aspx">
+      <publishTime>04/30/2008 11:04:38</publishTime>
+    </File>
+    <File Include="othertests/FmrYtdTest.aspx">
+      <publishTime>01/25/2013 15:42:20</publishTime>
+    </File>
+    <File Include="othertests/gridviewupdate.aspx">
+      <publishTime>04/30/2008 11:04:43</publishTime>
+    </File>
+    <File Include="othertests/parentchildrepeater.aspx">
+      <publishTime>04/30/2008 11:04:54</publishTime>
+    </File>
+    <File Include="othertests/PowerballService.aspx">
+      <publishTime>10/23/2013 13:44:59</publishTime>
+    </File>
+    <File Include="othertests/RSReport.aspx">
+      <publishTime>04/30/2008 17:15:52</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>11/13/2013 11:22:16</publishTime>
+    </File>
+    <File Include="pages/CssBarMeter.aspx">
+      <publishTime>01/08/2013 14:20:13</publishTime>
+    </File>
+    <File Include="pages/listadgroup.aspx">
+      <publishTime>04/30/2008 17:32:53</publishTime>
+    </File>
+    <File Include="services/adfunctions.asmx">
+      <publishTime>04/16/2008 13:01:52</publishTime>
+    </File>
+    <File Include="Styles.css">
+      <publishTime>02/03/2017 14:23:15</publishTime>
+    </File>
+    <File Include="usercontrols/ctlMasterMenu.ascx">
+      <publishTime>10/15/2013 15:27:08</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>02/14/2017 08:54:56</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

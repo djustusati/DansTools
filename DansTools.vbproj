@@ -1,0 +1,1267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D416C1BB-0E3E-4643-B1AB-F28D2CCEE006}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{F184B08F-C81C-45F6-A57F-5ABD9991F28F}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <RootNamespace>DansTools</RootNamespace>
+    <AssemblyName>DansTools</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UseIISExpress>false</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <TargetFrameworkProfile />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>DansTools.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DocumentationFile>DansTools.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022,42353,42354,42355</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=1.0.10123.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\AjaxControlToolkit.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework">
+      <HintPath>packages\EntityFramework.5.0.0\lib\net40\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\WINDOWS\assembly\GAC_MSIL\Microsoft.ReportViewer.WebForms\9.0.0.0__b03f5f7f11d50a3a\Microsoft.ReportViewer.WebForms.dll</HintPath>
+    </Reference>
+    <Reference Include="ReportViewer, Version=1.0.2260.19457, Culture=neutral" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Collections.Specialized" />
+    <Import Include="System.Configuration" />
+    <Import Include="System.Text" />
+    <Import Include="System.Text.RegularExpressions" />
+    <Import Include="System.Web" />
+    <Import Include="System.Web.Caching" />
+    <Import Include="System.Web.SessionState" />
+    <Import Include="System.Web.Security" />
+    <Import Include="System.Web.Profile" />
+    <Import Include="System.Web.UI" />
+    <Import Include="System.Web.UI.WebControls" />
+    <Import Include="System.Web.UI.WebControls.WebParts" />
+    <Import Include="System.Web.UI.HtmlControls" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Default.aspx" />
+    <Content Include="Geocode\Geocode.html" />
+    <Content Include="MetrixStuff\BullhornLookup.aspx" />
+    <Content Include="MetrixStuff\RecapDcrResearch.aspx" />
+    <Content Include="MetrixStuff\TestBullhornLookup.aspx" />
+    <Content Include="MetrixStuff\EmployeeLookup.aspx" />
+    <Content Include="MetrixStuff\MissingSurveySessionLookup.aspx" />
+    <Content Include="othertests\FmrYtdTest.aspx" />
+    <Content Include="pages\CssBarMeter.aspx" />
+    <Content Include="My Project\DataSources\System.Data.DataSet.datasource" />
+    <Content Include="packages.config" />
+    <EntityDeploy Include="MetrixDataModel\MetrixWeb_Prod.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>MetrixWeb_Prod.Designer.vb</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="MetrixDataModel\MetrixWeb_Prod.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MetrixWeb_Prod.edmx</DependentUpon>
+      <LastGenOutput>MetrixWeb_Prod.Context.vb</LastGenOutput>
+    </Content>
+    <Content Include="MetrixDataModel\MetrixWeb_Prod.edmx.diagram">
+      <DependentUpon>MetrixWeb_Prod.edmx</DependentUpon>
+    </Content>
+    <Content Include="MetrixDataModel\MetrixWeb_Prod.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>MetrixWeb_Prod.edmx</DependentUpon>
+      <LastGenOutput>MetrixWeb_Prod.vb</LastGenOutput>
+    </Content>
+    <None Include="Service References\PowerballWebService\get.disco" />
+    <None Include="Service References\PowerballWebService\configuration91.svcinfo" />
+    <None Include="Service References\PowerballWebService\configuration.svcinfo" />
+    <None Include="Service References\PowerballWebService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.vb</LastGenOutput>
+    </None>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Geocode\geocoding.aspx.designer.vb">
+      <DependentUpon>geocoding.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Geocode\geocoding.aspx.vb">
+      <DependentUpon>geocoding.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MetrixDataModel\Activation.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ActivationStatusChange.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Activity.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ActivityReimbursableSalesType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ActivityStatusChange.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ActivityType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\AdaptTransferLog.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\AddressType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\AgeRequirementType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\AgeVerificationType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Alert.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\AlertDefinition.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\AlertRecipientDefinition.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\AmendmentDefinition.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\AmendmentDefinitionPayment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\AmendmentDefinitionRule.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\AmendmentType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\AssignedBrand.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Audit.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Brand.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\BrandAmbassador.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\BrandAmbassadorMoba.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\BudgetCode.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\BusinessClassificationType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\BusinessOrganizationType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\CancellationReason.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Contract.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractAmendment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractAmendmentDocument.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractAmendmentPayment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractDefinition.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractDefinitionPayment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractDefinitionReimbursableSalesType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractDefinitionRule.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractDocument.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractDocumentType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractDocumentVersion.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractPayment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractRequest.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractRequestAmendment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractRequestAmendmentDocument.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractRequestAmendmentPayment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractRequestAmendmentStatusChange.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractRequestComment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractRequestDocument.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractRequestPayment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractRequestStatusChange.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractRequestVisibilityAmendment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractRequestVisibilityAmendmentVisibilityItemRequest.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractRuleTemplate.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractStatus.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractVisibilityAmendment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ContractVisibilityAmendmentVisibilityItemRequest.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\DateDimension.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\DCDSetup.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\DCDSetupStatus.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\DemographicType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\DistinctionType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ELMAH_Error.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Employee.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\EmployeeMarket.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\EmployeeProgram.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Event.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\EventCategory.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\EventDocument.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\EventStatus.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\FulfillmentCompany.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\FulfillmentCompanyShippingCarrier.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Holiday.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ImportFilesStatus.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\IncidentReport.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\IncidentType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InstallationSurfaceType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InstallationType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InstallationZoneType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InteractionCCNMeasurementData.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InventoryAdjustmentRequest.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InventoryAdjustmentRequestStatusChange.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InventoryDestructionRequest.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InventoryDestructionRequestComment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InventoryDestructionRequestItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InventoryDestructionRequestItemComment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InventoryDestructionRequestItemDocument.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InventoryDestructionRequestItemImage.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InventoryDestructionRequestItemStatusChange.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InventoryDestructionRequestStatusChange.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InventoryRequest.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InventoryRequestItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\InventoryTransactionType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Item.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ItemActiveDates.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ItemCategory.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ItemImage.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ItemInventory.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ItemInventoryTransaction.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ItemProgramPhysicalCountSchedule.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ItemStorageUnitAccount.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ItemTag.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ItemType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ItemTypeAtributes.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ItemTypeAttributeData.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ItemUnitMeasure.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\LanguageType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\LegacyRole.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\LicenseType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\LocationType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\MainCategoryDetails.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Market.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\MarketReportingGroup.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\MarketSize.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\MarketStandardPriceRule.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\MasterProgram.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Menu.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\MenuUserAction.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\MetrixWeb_Prod.Context.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MetrixWeb_Prod.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\MetrixWeb_Prod.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MetrixWeb_Prod.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\MetrixWeb_Prod.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\MinorityBusinessClassificationType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\MobileProviderType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\MusicType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Neighborhood.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Note.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Operator.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\OperatorAddress.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\OrderHistory.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\OrderHistoryItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\OrderItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\OrderPackingSlip.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\OrderPreProcessorFile.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\OrderPreProcessorFileOrder.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Orders.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\OrderStatusChange.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\OrderType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PaymentTier.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PaymentTierAmendmentAvailability.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PaymentTierAvailability.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Person.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PersonAddress.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PersonImage.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PersonPhoneNumber.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PfsWebErrorCode.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PhoneNumberType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PhysicalCount.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PhysicalCountFrequency.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PhysicalCountItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PhysicalCountSchedule.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PhysicalCountStatusChange.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PostalCode.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Program.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ProgramMarketDetail.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ProgramNotice.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ProgramNoticeProgram.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ProgramSetting.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ProgramVenuePaymentTypeAttribute.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ProgramWeek.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PromotionType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PromotionTypeAmendment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PromotionTypeAmendmentPaymentType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PromotionTypeCategory.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PromotionTypeDefaultItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PromotionTypeDocumentAttribute.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PromotionTypeQuestion.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PromotionTypeQuestionAnswer.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PromotionTypeReimbursableSalesType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\PromotionTypeRequirement.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\QuestionType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Recap.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapConfirmationStatus.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapDataCorrectionRequest.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapDataCorrectionRequestItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapDCD.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapDocument.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapDocumentComment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapDocumentHistory.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapInventory.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapNonReimbursableItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapQuestionAnswer.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapReimbursableBAPItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapReimbursableBOGOItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapReimbursableItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapReimbursableItemVenueItemInventory.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapReimbursableSalesType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapReimbursableXAPItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapStaff.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RecapVoucher.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Region.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Role.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\RoleUserAction.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\SeasonalityType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Session.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Shipment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ShipmentApproval.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ShipmentAvailableQuantity.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ShipmentItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ShipmentItemBox.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ShipmentItemFulfillment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ShipmentItemReceipt.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ShipmentItemStatusChange.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ShipmentNote.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ShipmentPackingSlip.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ShipmentProblemReport.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ShipmentReceiptDocument.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ShipmentRejection.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ShipmentStatusChange.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\ShippingCarrier.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Source.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\SourceItemType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\StaffHoursRecap.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\StaffHoursRecapItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\StaffHoursRecapType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\StateProvince.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Storage.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\StorageUnit.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\StorageUnitAccount.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\StorageUnitAccountDefaultShippingAddress.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\StorageUnitAccountItemInventoryAdjustmentRequest.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\StorageUnitAccountUser.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\StrategyType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\SubCategoryDetails.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Survey.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Task.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TaskCategory.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TaskDefinition.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TaskKey.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TaskRecipient.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TaskRecipientDefinition.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TaskStep.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TaskStepDefinition.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Team.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TeamManagerHistory.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TeamWeekDetail.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TimeDimension.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TimeZone.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TobaccoBrand.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TobaccoType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Topic.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Training.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TrainingDate.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TrainingDateAttendee.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TrainingDateDocument.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\TrainingMarket.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\UserAction.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\UserSession.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\Venue.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueAnswer.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueComment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueContact.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueDocument.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueDocumentDefinition.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueDocumentDefinitionAgeRequirementType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueDocumentDefinitionLocationType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueDocumentDefinitionProgram.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueDocumentType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueImage.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueImageType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueItemInventory.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueItemInventoryAdjustmentRequest.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueNumberHistory.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueOperatorInsurance.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenuePayment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenuePaymentCheckFile.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenuePaymentCheckFileSelection.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenuePaymentCheckFileSelectionItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenuePaymentCheckFileVenuePayment.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenuePaymentCheckProcessing.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenuePaymentItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenuePaymentType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenuePhoneNumber.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueProgramDetail.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueProgramDetailAttribute.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueProgramDetailConfirmationStatus.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueProgramDetailQuestionAnswer.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueProgramDetailSchedule.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueQuestion.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueQuestionAnswerLocationTypeProgram.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueReceipt.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueReceiptDocument.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueReceiptItem.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VenueTabCategory.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VisibilityItemInstallationTypeItemType.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VisibilityItemRequest.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VisibilityItemRequestImage.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VisibilityItemRequestStatus.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VisibilityItemRequestStatusChange.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VisibilityVenueItemInventory.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixDataModel\VisibilityVenueItemInventoryImage.vb">
+      <DependentUpon>MetrixWeb_Prod.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixStuff\BullhornLookup.aspx.designer.vb">
+      <DependentUpon>BullhornLookup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixStuff\BullhornLookup.aspx.vb">
+      <DependentUpon>BullhornLookup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MetrixStuff\RecapDcrResearch.aspx.designer.vb">
+      <DependentUpon>RecapDcrResearch.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixStuff\RecapDcrResearch.aspx.vb">
+      <DependentUpon>RecapDcrResearch.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MetrixStuff\TestBullhornLookup.aspx.designer.vb">
+      <DependentUpon>TestBullhornLookup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixStuff\TestBullhornLookup.aspx.vb">
+      <DependentUpon>TestBullhornLookup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MetrixStuff\EmployeeLookup.aspx.designer.vb">
+      <DependentUpon>EmployeeLookup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixStuff\EmployeeLookup.aspx.vb">
+      <DependentUpon>EmployeeLookup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="MetrixStuff\MissingSurveySessionLookup.aspx.designer.vb">
+      <DependentUpon>MissingSurveySessionLookup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MetrixStuff\MissingSurveySessionLookup.aspx.vb">
+      <DependentUpon>MissingSurveySessionLookup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="othertests\b.aspx.designer.vb">
+      <DependentUpon>b.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="othertests\b.aspx.vb">
+      <DependentUpon>b.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Class1.vb" />
+    <Compile Include="classes\BusinessLogic.vb" />
+    <Compile Include="Default.aspx.vb">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.vb">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Geocode\geocode.aspx.vb">
+      <DependentUpon>geocode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="masterPages\masterA.Master.designer.vb">
+      <DependentUpon>masterA.Master</DependentUpon>
+    </Compile>
+    <Compile Include="masterPages\masterA.Master.vb">
+      <DependentUpon>masterA.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="menueditor.aspx.designer.vb">
+      <DependentUpon>menueditor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="menueditor.aspx.vb">
+      <DependentUpon>menueditor.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="othertests\divpopup.aspx.designer.vb">
+      <DependentUpon>divpopup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="othertests\divpopup.aspx.vb">
+      <DependentUpon>divpopup.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="othertests\divpopupcontent.aspx.designer.vb">
+      <DependentUpon>divpopupcontent.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="othertests\divpopupcontent.aspx.vb">
+      <DependentUpon>divpopupcontent.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="othertests\FmrYtdTest.aspx.designer.vb">
+      <DependentUpon>FmrYtdTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="othertests\FmrYtdTest.aspx.vb">
+      <DependentUpon>FmrYtdTest.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="othertests\gridviewupdate.aspx.designer.vb">
+      <DependentUpon>gridviewupdate.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="othertests\gridviewupdate.aspx.vb">
+      <DependentUpon>gridviewupdate.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="othertests\parentchildrepeater.aspx.designer.vb">
+      <DependentUpon>parentchildrepeater.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="othertests\parentchildrepeater.aspx.vb">
+      <DependentUpon>parentchildrepeater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="othertests\RSReport.aspx.designer.vb">
+      <DependentUpon>RSReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="othertests\RSReport.aspx.vb">
+      <DependentUpon>RSReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="pages\CssBarMeter.aspx.designer.vb">
+      <DependentUpon>CssBarMeter.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\CssBarMeter.aspx.vb">
+      <DependentUpon>CssBarMeter.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="pages\listadgroup.aspx.designer.vb">
+      <DependentUpon>listadgroup.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="pages\listadgroup.aspx.vb">
+      <DependentUpon>listadgroup.aspx</DependentUpon>
+      <SubType>ASPXCodebehind</SubType>
+    </Compile>
+    <Compile Include="Service References\PowerballWebService\Reference.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="services\adfunctions.asmx.vb">
+      <DependentUpon>adfunctions.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="usercontrols\ctlMasterMenu.ascx.designer.vb">
+      <DependentUpon>ctlMasterMenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="usercontrols\ctlMasterMenu.ascx.vb">
+      <DependentUpon>ctlMasterMenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Geocode\geocoding.aspx" />
+    <Content Include="images\RSSpinner.gif" />
+    <Content Include="images\Spinner.gif" />
+    <Content Include="othertests\b.aspx" />
+    <Content Include="Geocode\geocode.aspx" />
+    <Content Include="images\blue_yellow_fad.jpg" />
+    <Content Include="images\find.png" />
+    <Content Include="images\table_add.png" />
+    <Content Include="masterPages\masterA.Master" />
+    <Content Include="menueditor.aspx" />
+    <Content Include="othertests\divpopup.aspx" />
+    <Content Include="othertests\divpopupcontent.aspx" />
+    <Content Include="othertests\gridviewupdate.aspx" />
+    <Content Include="othertests\parentchildrepeater.aspx" />
+    <Content Include="othertests\RSReport.aspx" />
+    <Content Include="pages\listadgroup.aspx" />
+    <Content Include="services\adfunctions.asmx" />
+    <Content Include="Styles.css" />
+    <Content Include="usercontrols\ctlMasterMenu.ascx" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\PublishProfiles\Default.pubxml" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="Service References\PowerballWebService\get.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Scripts\" />
+    <Folder Include="uploads\geo\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\PowerballWebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2726</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

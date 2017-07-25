@@ -1,0 +1,17 @@
+C:\Dev\DansTools\bin\DansTools.dll
+C:\Dev\DansTools\bin\DansTools.pdb
+C:\Dev\DansTools\bin\DansTools.xml
+C:\Dev\DansTools\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\DansTools\obj\Debug\DansTools.Resources.resources
+C:\Dev\DansTools\obj\Debug\DansTools.vbproj.GenerateResource.Cache
+C:\Dev\DansTools\obj\Debug\DansTools.dll
+C:\Dev\DansTools\obj\Debug\DansTools.xml
+C:\Dev\DansTools\obj\Debug\DansTools.pdb
+E:\Dev\DansTools\bin\DansTools.dll
+E:\Dev\DansTools\bin\DansTools.pdb
+E:\Dev\DansTools\bin\DansTools.xml
+E:\Dev\DansTools\obj\Debug\DansTools.Resources.resources
+E:\Dev\DansTools\obj\Debug\DansTools.vbproj.GenerateResource.Cache
+E:\Dev\DansTools\obj\Debug\DansTools.dll
+E:\Dev\DansTools\obj\Debug\DansTools.xml
+E:\Dev\DansTools\obj\Debug\DansTools.pdb

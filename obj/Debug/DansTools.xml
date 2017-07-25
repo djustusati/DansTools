@@ -1,0 +1,911 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DansTools
+</name>
+</assembly>
+<members>
+<member name="F:DansTools.PPPMisc.RSReport.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.PPPMisc.RSReport.ddlSelectReport">
+	<summary>
+ddlSelectReport control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.PPPMisc.RSReport.sqlrvReportViewer">
+	<summary>
+sqlrvReportViewer control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.divpopupcontent.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:DansTools.divpopupcontent">
+	<summary>
+divpopupcontent class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:DansTools.listadgroup.litGroupName">
+	<summary>
+litGroupName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.listadgroup.ddlGroups">
+	<summary>
+ddlGroups control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.listadgroup.ibtnSearch">
+	<summary>
+ibtnSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.listadgroup.ibtnExportList">
+	<summary>
+ibtnExportList control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.listadgroup.grdADUserList">
+	<summary>
+grdADUserList control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.menueditor.upnlMenuEditor">
+	<summary>
+upnlMenuEditor control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.menueditor.accdAccordianMenuEdit">
+	<summary>
+accdAccordianMenuEdit control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.menueditor.AccordionPane1">
+	<summary>
+AccordionPane1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.menueditor.grdMenuItems">
+	<summary>
+grdMenuItems control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.menueditor.AccordionPane2">
+	<summary>
+AccordionPane2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.menueditor.txtNewMenuText">
+	<summary>
+txtNewMenuText control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.menueditor.txtNewMenuLink">
+	<summary>
+txtNewMenuLink control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.menueditor.txtNewMenuOrder">
+	<summary>
+txtNewMenuOrder control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.menueditor.btnAddNewMenu">
+	<summary>
+btnAddNewMenu control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.menueditor.confirmeAddMenuItem">
+	<summary>
+confirmeAddMenuItem control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.menueditor.dscMenuList">
+	<summary>
+dscMenuList control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.menueditor.upnlprogUpdateProgress">
+	<summary>
+upnlprogUpdateProgress control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="P:DansTools.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:DansTools.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:DansTools.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="F:DansTools.MetrixStuff.MissingSurveySessionLookup.TextboxSearchBaId">
+	<summary>
+TextboxSearchBaId control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.MetrixStuff.MissingSurveySessionLookup.TextboxSearchDate">
+	<summary>
+TextboxSearchDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.MetrixStuff.MissingSurveySessionLookup.ButtonUpdateSearchDates">
+	<summary>
+ButtonUpdateSearchDates control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.MetrixStuff.MissingSurveySessionLookup.TextboxSearchFromDate">
+	<summary>
+TextboxSearchFromDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.MetrixStuff.MissingSurveySessionLookup.TextboxSearchToDate">
+	<summary>
+TextboxSearchToDate control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.MetrixStuff.MissingSurveySessionLookup.ButtonSearch">
+	<summary>
+ButtonSearch control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.MetrixStuff.MissingSurveySessionLookup.GridViewJupiterMobileData">
+	<summary>
+GridViewJupiterMobileData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.MetrixStuff.MissingSurveySessionLookup.GridViewRecapDcdData">
+	<summary>
+GridViewRecapDcdData control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.MetrixStuff.MissingSurveySessionLookup.GridViewSurveySessionTotals">
+	<summary>
+GridViewSurveySessionTotals control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="M:DansTools.BusinessLogic.PopulateDDLFromDB(System.String,System.Data.CommandType,System.Web.UI.WebControls.ParameterCollection,System.Web.UI.WebControls.DropDownList,System.String,System.String)">
+	<summary>
+ Populates a passed dropdown list from a query or stored procedure
+ </summary>
+	<param name="sStatement">Parameterized SQL Statement or Stored Procedure name</param>
+	<param name="iCommandType">Type of query (Text or StoredProcedure)</param>
+	<param name="Params">ParameterCollection of parameters for SQL statement or Stored Procedure</param>
+	<param name="DDL">The dropdownlist to be populated</param>
+	<param name="ValueField">The name of the returned field that will represent the value of the selected item</param>
+	<param name="DisplayField">The name of the returned field that will display in the list</param>
+	<remarks></remarks>
+</member><member name="F:DansTools.FmrYtdTest.TextBox1">
+	<summary>
+TextBox1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.FmrYtdTest.TextBox2">
+	<summary>
+TextBox2 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.FmrYtdTest.TextBox3">
+	<summary>
+TextBox3 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.FmrYtdTest.TextBox4">
+	<summary>
+TextBox4 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.FmrYtdTest.TextBox5">
+	<summary>
+TextBox5 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.FmrYtdTest.TextBox6">
+	<summary>
+TextBox6 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.FmrYtdTest.TextBox7">
+	<summary>
+TextBox7 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.FmrYtdTest.TextBox8">
+	<summary>
+TextBox8 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.FmrYtdTest.TextBox9">
+	<summary>
+TextBox9 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.FmrYtdTest.TextBox10">
+	<summary>
+TextBox10 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.FmrYtdTest.TextBox11">
+	<summary>
+TextBox11 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.FmrYtdTest.Button1">
+	<summary>
+Button1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.FmrYtdTest.lblReturnValue">
+	<summary>
+lblReturnValue control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.geocoding.txtAddZip">
+	<summary>
+txtAddZip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.geocoding.btnAddZip">
+	<summary>
+btnAddZip control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.geocoding.fuplUploadExcelAddressList">
+	<summary>
+fuplUploadExcelAddressList control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.geocoding.btnLoadSpreadsheet">
+	<summary>
+btnLoadSpreadsheet control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.geocoding.lblZipRet">
+	<summary>
+lblZipRet control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.geocoding.lblErrorMessage">
+	<summary>
+lblErrorMessage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.geocoding.btnGetLocations">
+	<summary>
+btnGetLocations control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.geocoding.grdAddressList">
+	<summary>
+grdAddressList control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.gridviewupdate.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.gridviewupdate.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.gridviewupdate.SqlDataSource1">
+	<summary>
+SqlDataSource1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.gridviewupdate.GridView1">
+	<summary>
+GridView1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:DansTools.gridviewupdate">
+	<summary>
+gridviewupdate class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:DansTools.b.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.MyLabel">
+	<summary>
+MyLabel control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.UpdatePanel1">
+	<summary>
+UpdatePanel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.txtFirstName">
+	<summary>
+txtFirstName control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.Panel1">
+	<summary>
+Panel1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.pnlEncryptionHeader">
+	<summary>
+pnlEncryptionHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.imgEncryptionToggle">
+	<summary>
+imgEncryptionToggle control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.pnlEncryptionContent">
+	<summary>
+pnlEncryptionContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.txtUser">
+	<summary>
+txtUser control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.txtPass">
+	<summary>
+txtPass control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.btnEncryptPass">
+	<summary>
+btnEncryptPass control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.txtEncryption">
+	<summary>
+txtEncryption control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.btnDecrypt">
+	<summary>
+btnDecrypt control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.txtPassEncr">
+	<summary>
+txtPassEncr control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.pnlPassGenHeader">
+	<summary>
+pnlPassGenHeader control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.imgPassGenToggleImage">
+	<summary>
+imgPassGenToggleImage control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.pnlPassGenContent">
+	<summary>
+pnlPassGenContent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.lblComplexitySelect">
+	<summary>
+lblComplexitySelect control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.upnlPassGen">
+	<summary>
+upnlPassGen control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.lblComplexity">
+	<summary>
+lblComplexity control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.lblLen">
+	<summary>
+lblLen control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.txtPassLen">
+	<summary>
+txtPassLen control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.ftePassLen">
+	<summary>
+ftePassLen control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.btnGeneratePassword">
+	<summary>
+btnGeneratePassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.txtNewPassword">
+	<summary>
+txtNewPassword control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.UpdateAnimation">
+	<summary>
+UpdateAnimation control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.pnlPWDropDown">
+	<summary>
+pnlPWDropDown control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.lnkPWSimple">
+	<summary>
+lnkPWSimple control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.lnkPWMedium">
+	<summary>
+lnkPWMedium control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.lnkPWComplex">
+	<summary>
+lnkPWComplex control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.DDE">
+	<summary>
+DDE control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.cpeEncryption">
+	<summary>
+cpeEncryption control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.b.cpePassGen">
+	<summary>
+cpePassGen control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:DansTools.b">
+	<summary>
+b class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member><member name="F:DansTools.ctlMasterMenu.dlstMenu">
+	<summary>
+dlstMenu control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.ctlMasterMenu.dscMenu">
+	<summary>
+dscMenu control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.masterA.head">
+	<summary>
+head control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.masterA.form1">
+	<summary>
+form1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.masterA.ScriptManager1">
+	<summary>
+ScriptManager1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.masterA.ctlMasterMenu1">
+	<summary>
+ctlMasterMenu1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.masterA.ContentPlaceHolder1">
+	<summary>
+ContentPlaceHolder1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.divpopup.txtEditMenuID">
+	<summary>
+txtEditMenuID control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.divpopup.txtEditMenuText">
+	<summary>
+txtEditMenuText control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.divpopup.btnUpdateMenu">
+	<summary>
+btnUpdateMenu control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.divpopup.grdMenu">
+	<summary>
+grdMenu control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.divpopup.dscTest">
+	<summary>
+dscTest control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.divpopup.lblErrMsg">
+	<summary>
+lblErrMsg control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.CssBarMeter.txtMeterPercent">
+	<summary>
+txtMeterPercent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.CssBarMeter.btnUpdateMeterPercent">
+	<summary>
+btnUpdateMeterPercent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.parentchildrepeater.rptParent">
+	<summary>
+rptParent control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="F:DansTools.parentchildrepeater.Label1">
+	<summary>
+Label1 control.
+</summary>
+	<remarks>
+Auto-generated field.
+To modify move field declaration from designer file to code-behind file.
+</remarks>
+</member><member name="T:DansTools.parentchildrepeater">
+	<summary>
+parentchildrepeater class.
+</summary>
+	<remarks>
+Auto-generated class.
+</remarks>
+</member>
+</members>
+</doc>

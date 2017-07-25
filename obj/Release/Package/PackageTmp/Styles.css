@@ -1,0 +1,273 @@
+﻿body
+{
+    background-color: #B2D5EE;
+    background-image: url( 'file:///C:/Dev/DansTools/images/blue_yellow_fad.jpg' );
+    background-repeat: repeat-x;
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
+
+H1
+{
+    color: blue;
+    font-size: 16pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+H6
+{
+    border: solid, 1pt, green;
+    color: green;
+    font-size: 10pt;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.containerTitle {
+    font-weight: bold;
+}
+
+#menuPane
+{
+    float: left;
+    left: 0px;
+    top: 0px;
+    vertical-align: top;
+    width: 100px;
+}
+
+.menuTitle
+{
+    background-color: #003399;
+    color: #CCFFFF;
+    margin: 0px;
+    padding: 2px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#contentPane
+{
+    float: left;
+    left: 3px;
+    position: relative;
+    text-align: left;
+    top: 0px;
+    vertical-align: top;
+    width: 100%;
+}
+
+.formItem
+{
+    color: #000000;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 11px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+}
+
+.flyOver
+{
+    background-color: #CCFFCC;
+    border-style: outset;
+    cursor: pointer;
+    font-size: 7pt;
+    text-align: center;
+}
+
+.flyOut
+{
+    background-color: #EEEEEE;
+    border-style: outset;
+    cursor: auto;
+    font-size: 7pt;
+    text-align: center;
+}
+
+.flyOverSelected
+{
+    background-color: #CCFFCC;
+    border-style: inset;
+    cursor: pointer;
+    font-size: 7pt;
+    text-align: center;
+}
+
+.flyOutSelected
+{
+    background-color: #999999;
+    border-style: inset;
+    cursor: auto;
+    font-size: 7pt;
+    text-align: center;
+}
+
+.errorLabel
+{
+    color: Red;
+    font-family: Verdana, Sans-Serif;
+    font-size: inherit;
+}
+
+.divHourglass
+{
+    background-color: #FFFF99;
+    color: Black;
+    font-family: inherit;
+    font-size: 16pt;
+    font-style: normal;
+    font-weight: 900;
+    height: 150px;
+    position: absolute;
+    text-align: center;
+    text-decoration: wavy;
+    vertical-align: middle;
+    visibility: hidden;
+    width: 200px;
+    z-index: 1;
+}
+
+.alternatingItem div
+{
+    background-color: #eee8aa;
+}
+
+.container div
+{
+    border: solid black 1px;
+}
+
+/* Accordion */
+.accordionHeader
+{
+    background-color: #2E4d7B;
+    border: 1px solid #2F4F4F;
+    color: yellow;
+    cursor: pointer;
+    font-family: Arial, Sans-Serif;
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 5px;
+}
+
+    .accordionHeader a
+    {
+        background: none;
+        color: Yellow;
+        text-decoration: none;
+    }
+
+        .accordionHeader a:hover
+        {
+            background: none;
+            text-decoration: underline;
+        }
+
+.accordionContent
+{
+    /*    background-color: #D3DEEF; */
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
+
+.accordionHeaderSelected a
+{
+    background: yellow;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+    .accordionHeaderSelected a:hover
+    {
+        background: none;
+        text-decoration: underline;
+    }
+/* End of Accordion */
+
+/* GridView */
+.grd_GridView
+{
+    background-color: Gray;
+    border: solid 2px Gray;
+    font-family: Verdana;
+    Font-Size: 9pt;
+    padding: 1pt;
+}
+
+.grd_HeaderStyle
+{
+    background-color: #3366CC;
+    color: #FFFFCC;
+    font-size: 8pt;
+    font-weight: bold;
+    text-align: center;
+}
+
+.grd_RowStyle
+{
+    background-color: #CCFFFF;
+    border: none 0px white;
+    color: Black;
+    text-align: center;
+}
+
+.grd_AlternatingRowStyle
+{
+    background-color: #FFFFCC;
+    color: Black;
+    text-align: center;
+}
+
+.grd_FooterStyle
+{
+    background-color: #3366CC;
+    color: #FFFFCC;
+    font-size: 8pt;
+    text-align: center;
+}
+
+.gridviewTable
+{
+    border: 1px solid #808080;
+    border-collapse: separate;
+    border-spacing: 1px;
+    display: table;
+    empty-cells: show;
+    table-layout: auto;
+}
+
+    .gridviewTable td
+    {
+        border: 1px solid #808080;
+    }
+
+    .gridviewTable th thead
+    {
+        border: 1px solid #000000;
+        font-weight: 900;
+        margin: 1px;
+        padding: 3px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+.noWrapGridview td
+{
+    white-space: nowrap;
+}
+
+.noWrap_AlternatingRowStyle
+{
+    background-color: #7cfbe1;
+}
+/* End of GridView */
+

@@ -1,0 +1,231 @@
+﻿body
+{
+	font-family: 'Courier New' , Courier, monospace;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #000000;
+	background-color: #FFFFC0;
+	background-image: url( 'file:///C:/Dev/DansTools/images/blue_yellow_fad.jpg' );
+	background-repeat: repeat-x;
+}
+H1
+{
+	font-weight: bold;
+	font-size: 16pt;
+	color: blue;
+	text-decoration: none;
+}
+H6
+{
+	font-weight: bold;
+	font-size: 10pt;
+	color: green;
+	text-decoration: none;
+	border: solid, 1, green;
+}
+#menuPane
+{
+	width: 100px;
+	top: 0px;
+	left: 0px;
+	float: left;
+	background-color: #FFFFCC;
+	vertical-align: top;
+}
+.menuTitle
+{
+	vertical-align: middle;
+	text-align: center;
+	background-color: #003399;
+	color: #CCFFFF;
+	padding: 2px;
+	margin: 0px;
+}
+#contentPane
+{
+	float: left;
+	position: relative;
+	left: 3px;
+	top: 0px;
+	width: 100%;
+	vertical-align: top;
+	text-align: left;
+}
+.formItem
+{
+	font-family: 'Courier New' , Courier, monospace;
+	font-size: 11px;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	color: #000000;
+}
+.flyOver
+{
+    cursor: pointer;
+    background-color: #CCFFCC;
+    text-align: center;
+    border-style: outset;
+    font-size: 7pt;
+}
+.flyOut
+{
+    cursor : auto;
+    background-color: #EEEEEE;
+    text-align: center;
+    border-style: outset;
+    font-size: 7pt;
+}
+.flyOverSelected
+{
+    cursor: pointer;
+    background-color: #CCFFCC;
+    text-align: center;
+    border-style: inset;
+    font-size: 7pt;
+}
+.flyOutSelected
+{
+    cursor : auto;
+    background-color: #999999;
+    text-align: center;
+    border-style: inset;
+    font-size: 7pt;
+}
+.errorLabel
+{
+	font-size:inherit;
+	font-family:Verdana, Sans-Serif;
+	color:Red
+}
+.divHourglass
+{
+	z-index:1;
+	width:200px;
+	height:150px;
+	position:absolute;
+	visibility:hidden;
+	background-color:#FFFF99;
+	font-family:inherit;
+	font-size:16pt;
+	font-style:normal;
+	font-weight:900;
+	color:Black;
+	text-align:center;
+	vertical-align:middle;
+	text-decoration:blink;
+}
+
+/* Accordion */
+.accordionHeader
+{
+    border: 1px solid #2F4F4F;
+    color: yellow;
+    background-color: #2E4d7B;
+	font-family: Arial, Sans-Serif;
+	font-size: 12px;
+	font-weight: bold;
+    padding: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+.accordionHeader a
+{
+	color: Yellow;
+	background: none;
+	text-decoration: none;
+}
+.accordionHeader a:hover
+{
+	background: none;
+	text-decoration: underline;
+}
+.accordionContent
+{
+/*    background-color: #D3DEEF; */
+    border: 1px dashed #2F4F4F;
+    border-top: none;
+    padding: 5px;
+    padding-top: 10px;
+}
+.accordionHeaderSelected a
+{
+      color: #FFFFFF;
+      background: yellow;
+      text-decoration: none;
+}
+ 
+.accordionHeaderSelected a:hover
+{
+      background: none;
+      text-decoration: underline;
+}
+/* End of Accordion */
+
+
+/* GridView */
+.grd_GridView
+{
+	font-family: Verdana;
+	Font-Size: 7pt;
+	background-color: Gray;
+	border: solid 2px Gray;
+	padding: 1;
+}
+.grd_HeaderStyle
+{
+	background-color: #3366CC;
+	font-weight: bold;
+	color: #FFFFCC;
+	text-align: center;
+	font-size: 8pt;
+}
+.grd_RowStyle
+{
+	background-color: #CCFFFF;
+	font-size: 7pt;
+	color: Black;
+	text-align: center;
+	border: none 0px white;
+}
+.grd_AlternatingRowStyle
+{
+	background-color: #FFFFCC;
+	font-size: 7pt;
+	color: Black;
+	text-align: center;
+}
+.grd_FooterStyle
+{
+	background-color: #3366CC;
+	color: #FFFFCC;
+	text-align: center;
+	font-size: 8pt;
+}
+
+.gridviewTable
+{
+	display: table;
+	table-layout: auto;
+	border-collapse: separate;
+	border-spacing: 1px;
+	empty-cells: show;
+	border: 1px solid #808080;
+}
+.gridviewTable td
+{
+	border: 1px solid #808080;
+}
+.gridviewTable th thead
+{
+	padding: 3px;
+	margin: 1px;
+	border: 1px solid #000000;
+	vertical-align: middle;
+	text-align: center;
+	font-weight: 900;
+}
+/* End of GridView */
+

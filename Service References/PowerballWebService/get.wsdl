@@ -1,0 +1,3186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Powerball">
+        <s:complexType />
+      </s:element>
+      <s:element name="PowerballResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PowerballResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastPowerballText">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastPowerballTextResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastPowerballTextResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastPowerball">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastPowerballResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastPowerballResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PBDrawDate">
+        <s:complexType />
+      </s:element>
+      <s:element name="PBDrawDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PBDrawDateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JustPBDrawDate">
+        <s:complexType />
+      </s:element>
+      <s:element name="JustPBDrawDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="JustPBDrawDateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PBJackpot">
+        <s:complexType />
+      </s:element>
+      <s:element name="PBJackpotResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PBJackpotResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastPowerballGraphics">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastPowerballGraphicsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastPowerballGraphicsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JustPBImage">
+        <s:complexType />
+      </s:element>
+      <s:element name="JustPBImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="JustPBImageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MegaMillions">
+        <s:complexType />
+      </s:element>
+      <s:element name="MegaMillionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MegaMillionsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastMegaMillions">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastMegaMillionsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastMegaMillionsResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MMDrawDate">
+        <s:complexType />
+      </s:element>
+      <s:element name="MMDrawDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MMDrawDateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JustMegaMillionsDrawDate">
+        <s:complexType />
+      </s:element>
+      <s:element name="JustMegaMillionsDrawDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="JustMegaMillionsDrawDateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="MegaMillionsJackpot">
+        <s:complexType />
+      </s:element>
+      <s:element name="MegaMillionsJackpotResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="MegaMillionsJackpotResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastMegaMillionsGraphics">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastMegaMillionsGraphicsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastMegaMillionsGraphicsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JustMMImage">
+        <s:complexType />
+      </s:element>
+      <s:element name="JustMMImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="JustMMImageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="JustMegaMillionsImage">
+        <s:complexType />
+      </s:element>
+      <s:element name="JustMegaMillionsImageResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="JustMegaMillionsImageResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Cash6">
+        <s:complexType />
+      </s:element>
+      <s:element name="Cash6Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cash6Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastCash6">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastCash6Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastCash6Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Cash6DrawDate">
+        <s:complexType />
+      </s:element>
+      <s:element name="Cash6DrawDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cash6DrawDateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastCash6Date">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastCash6DateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastCash6DateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastCash6Graphics">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastCash6GraphicsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastCash6GraphicsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="P5">
+        <s:complexType />
+      </s:element>
+      <s:element name="P5Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="P5Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastP5">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastP5Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastP5Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="P5DrawDate">
+        <s:complexType />
+      </s:element>
+      <s:element name="P5DrawDateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="P5DrawDateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastP5Date">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastP5DateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastP5DateResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastP5Graphics">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastP5GraphicsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastP5GraphicsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="P4">
+        <s:complexType />
+      </s:element>
+      <s:element name="P4Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="P4Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastP4">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastP4Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastP4Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreviousP4">
+        <s:complexType />
+      </s:element>
+      <s:element name="PreviousP4Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PreviousP4Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastP4Graphics">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastP4GraphicsResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastP4GraphicsResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreviousP4Graphic">
+        <s:complexType />
+      </s:element>
+      <s:element name="PreviousP4GraphicResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PreviousP4GraphicResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastP4Time">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastP4TimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastP4TimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreviousP4Time">
+        <s:complexType />
+      </s:element>
+      <s:element name="PreviousP4TimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PreviousP4TimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="P3">
+        <s:complexType />
+      </s:element>
+      <s:element name="P3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="P3Result" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastP3">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastP3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastP3Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreviousP3">
+        <s:complexType />
+      </s:element>
+      <s:element name="PreviousP3Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PreviousP3Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastP3Graphic">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastP3GraphicResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastP3GraphicResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreviousP3Graphic">
+        <s:complexType />
+      </s:element>
+      <s:element name="PreviousP3GraphicResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PreviousP3GraphicResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LastP3Time">
+        <s:complexType />
+      </s:element>
+      <s:element name="LastP3TimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LastP3TimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PreviousP3Time">
+        <s:complexType />
+      </s:element>
+      <s:element name="PreviousP3TimeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PreviousP3TimeResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="RaffleCountdown">
+        <s:complexType />
+      </s:element>
+      <s:element name="RaffleCountdownResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="RaffleCountdownResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="DataSet" nillable="true">
+        <s:complexType>
+          <s:sequence>
+            <s:element ref="s:schema" />
+            <s:any />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PowerballSoapIn">
+    <wsdl:part name="parameters" element="tns:Powerball" />
+  </wsdl:message>
+  <wsdl:message name="PowerballSoapOut">
+    <wsdl:part name="parameters" element="tns:PowerballResponse" />
+  </wsdl:message>
+  <wsdl:message name="LastPowerballTextSoapIn">
+    <wsdl:part name="parameters" element="tns:LastPowerballText" />
+  </wsdl:message>
+  <wsdl:message name="LastPowerballTextSoapOut">
+    <wsdl:part name="parameters" element="tns:LastPowerballTextResponse" />
+  </wsdl:message>
+  <wsdl:message name="LastPowerballSoapIn">
+    <wsdl:part name="parameters" element="tns:LastPowerball" />
+  </wsdl:message>
+  <wsdl:message name="LastPowerballSoapOut">
+    <wsdl:part name="parameters" element="tns:LastPowerballResponse" />
+  </wsdl:message>
+  <wsdl:message name="PBDrawDateSoapIn">
+    <wsdl:part name="parameters" element="tns:PBDrawDate" />
+  </wsdl:message>
+  <wsdl:message name="PBDrawDateSoapOut">
+    <wsdl:part name="parameters" element="tns:PBDrawDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="JustPBDrawDateSoapIn">
+    <wsdl:part name="parameters" element="tns:JustPBDrawDate" />
+  </wsdl:message>
+  <wsdl:message name="JustPBDrawDateSoapOut">
+    <wsdl:part name="parameters" element="tns:JustPBDrawDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="PBJackpotSoapIn">
+    <wsdl:part name="parameters" element="tns:PBJackpot" />
+  </wsdl:message>
+  <wsdl:message name="PBJackpotSoapOut">
+    <wsdl:part name="parameters" element="tns:PBJackpotResponse" />
+  </wsdl:message>
+  <wsdl:message name="LastPowerballGraphicsSoapIn">
+    <wsdl:part name="parameters" element="tns:LastPowerballGraphics" />
+  </wsdl:message>
+  <wsdl:message name="LastPowerballGraphicsSoapOut">
+    <wsdl:part name="parameters" element="tns:LastPowerballGraphicsResponse" />
+  </wsdl:message>
+  <wsdl:message name="JustPBImageSoapIn">
+    <wsdl:part name="parameters" element="tns:JustPBImage" />
+  </wsdl:message>
+  <wsdl:message name="JustPBImageSoapOut">
+    <wsdl:part name="parameters" element="tns:JustPBImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="MegaMillionsSoapIn">
+    <wsdl:part name="parameters" element="tns:MegaMillions" />
+  </wsdl:message>
+  <wsdl:message name="MegaMillionsSoapOut">
+    <wsdl:part name="parameters" element="tns:MegaMillionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="LastMegaMillionsSoapIn">
+    <wsdl:part name="parameters" element="tns:LastMegaMillions" />
+  </wsdl:message>
+  <wsdl:message name="LastMegaMillionsSoapOut">
+    <wsdl:part name="parameters" element="tns:LastMegaMillionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="MMDrawDateSoapIn">
+    <wsdl:part name="parameters" element="tns:MMDrawDate" />
+  </wsdl:message>
+  <wsdl:message name="MMDrawDateSoapOut">
+    <wsdl:part name="parameters" element="tns:MMDrawDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="JustMegaMillionsDrawDateSoapIn">
+    <wsdl:part name="parameters" element="tns:JustMegaMillionsDrawDate" />
+  </wsdl:message>
+  <wsdl:message name="JustMegaMillionsDrawDateSoapOut">
+    <wsdl:part name="parameters" element="tns:JustMegaMillionsDrawDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="MegaMillionsJackpotSoapIn">
+    <wsdl:part name="parameters" element="tns:MegaMillionsJackpot" />
+  </wsdl:message>
+  <wsdl:message name="MegaMillionsJackpotSoapOut">
+    <wsdl:part name="parameters" element="tns:MegaMillionsJackpotResponse" />
+  </wsdl:message>
+  <wsdl:message name="LastMegaMillionsGraphicsSoapIn">
+    <wsdl:part name="parameters" element="tns:LastMegaMillionsGraphics" />
+  </wsdl:message>
+  <wsdl:message name="LastMegaMillionsGraphicsSoapOut">
+    <wsdl:part name="parameters" element="tns:LastMegaMillionsGraphicsResponse" />
+  </wsdl:message>
+  <wsdl:message name="JustMMImageSoapIn">
+    <wsdl:part name="parameters" element="tns:JustMMImage" />
+  </wsdl:message>
+  <wsdl:message name="JustMMImageSoapOut">
+    <wsdl:part name="parameters" element="tns:JustMMImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="JustMegaMillionsImageSoapIn">
+    <wsdl:part name="parameters" element="tns:JustMegaMillionsImage" />
+  </wsdl:message>
+  <wsdl:message name="JustMegaMillionsImageSoapOut">
+    <wsdl:part name="parameters" element="tns:JustMegaMillionsImageResponse" />
+  </wsdl:message>
+  <wsdl:message name="Cash6SoapIn">
+    <wsdl:part name="parameters" element="tns:Cash6" />
+  </wsdl:message>
+  <wsdl:message name="Cash6SoapOut">
+    <wsdl:part name="parameters" element="tns:Cash6Response" />
+  </wsdl:message>
+  <wsdl:message name="LastCash6SoapIn">
+    <wsdl:part name="parameters" element="tns:LastCash6" />
+  </wsdl:message>
+  <wsdl:message name="LastCash6SoapOut">
+    <wsdl:part name="parameters" element="tns:LastCash6Response" />
+  </wsdl:message>
+  <wsdl:message name="Cash6DrawDateSoapIn">
+    <wsdl:part name="parameters" element="tns:Cash6DrawDate" />
+  </wsdl:message>
+  <wsdl:message name="Cash6DrawDateSoapOut">
+    <wsdl:part name="parameters" element="tns:Cash6DrawDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="LastCash6DateSoapIn">
+    <wsdl:part name="parameters" element="tns:LastCash6Date" />
+  </wsdl:message>
+  <wsdl:message name="LastCash6DateSoapOut">
+    <wsdl:part name="parameters" element="tns:LastCash6DateResponse" />
+  </wsdl:message>
+  <wsdl:message name="LastCash6GraphicsSoapIn">
+    <wsdl:part name="parameters" element="tns:LastCash6Graphics" />
+  </wsdl:message>
+  <wsdl:message name="LastCash6GraphicsSoapOut">
+    <wsdl:part name="parameters" element="tns:LastCash6GraphicsResponse" />
+  </wsdl:message>
+  <wsdl:message name="P5SoapIn">
+    <wsdl:part name="parameters" element="tns:P5" />
+  </wsdl:message>
+  <wsdl:message name="P5SoapOut">
+    <wsdl:part name="parameters" element="tns:P5Response" />
+  </wsdl:message>
+  <wsdl:message name="LastP5SoapIn">
+    <wsdl:part name="parameters" element="tns:LastP5" />
+  </wsdl:message>
+  <wsdl:message name="LastP5SoapOut">
+    <wsdl:part name="parameters" element="tns:LastP5Response" />
+  </wsdl:message>
+  <wsdl:message name="P5DrawDateSoapIn">
+    <wsdl:part name="parameters" element="tns:P5DrawDate" />
+  </wsdl:message>
+  <wsdl:message name="P5DrawDateSoapOut">
+    <wsdl:part name="parameters" element="tns:P5DrawDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="LastP5DateSoapIn">
+    <wsdl:part name="parameters" element="tns:LastP5Date" />
+  </wsdl:message>
+  <wsdl:message name="LastP5DateSoapOut">
+    <wsdl:part name="parameters" element="tns:LastP5DateResponse" />
+  </wsdl:message>
+  <wsdl:message name="LastP5GraphicsSoapIn">
+    <wsdl:part name="parameters" element="tns:LastP5Graphics" />
+  </wsdl:message>
+  <wsdl:message name="LastP5GraphicsSoapOut">
+    <wsdl:part name="parameters" element="tns:LastP5GraphicsResponse" />
+  </wsdl:message>
+  <wsdl:message name="P4SoapIn">
+    <wsdl:part name="parameters" element="tns:P4" />
+  </wsdl:message>
+  <wsdl:message name="P4SoapOut">
+    <wsdl:part name="parameters" element="tns:P4Response" />
+  </wsdl:message>
+  <wsdl:message name="LastP4SoapIn">
+    <wsdl:part name="parameters" element="tns:LastP4" />
+  </wsdl:message>
+  <wsdl:message name="LastP4SoapOut">
+    <wsdl:part name="parameters" element="tns:LastP4Response" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP4SoapIn">
+    <wsdl:part name="parameters" element="tns:PreviousP4" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP4SoapOut">
+    <wsdl:part name="parameters" element="tns:PreviousP4Response" />
+  </wsdl:message>
+  <wsdl:message name="LastP4GraphicsSoapIn">
+    <wsdl:part name="parameters" element="tns:LastP4Graphics" />
+  </wsdl:message>
+  <wsdl:message name="LastP4GraphicsSoapOut">
+    <wsdl:part name="parameters" element="tns:LastP4GraphicsResponse" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP4GraphicSoapIn">
+    <wsdl:part name="parameters" element="tns:PreviousP4Graphic" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP4GraphicSoapOut">
+    <wsdl:part name="parameters" element="tns:PreviousP4GraphicResponse" />
+  </wsdl:message>
+  <wsdl:message name="LastP4TimeSoapIn">
+    <wsdl:part name="parameters" element="tns:LastP4Time" />
+  </wsdl:message>
+  <wsdl:message name="LastP4TimeSoapOut">
+    <wsdl:part name="parameters" element="tns:LastP4TimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP4TimeSoapIn">
+    <wsdl:part name="parameters" element="tns:PreviousP4Time" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP4TimeSoapOut">
+    <wsdl:part name="parameters" element="tns:PreviousP4TimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="P3SoapIn">
+    <wsdl:part name="parameters" element="tns:P3" />
+  </wsdl:message>
+  <wsdl:message name="P3SoapOut">
+    <wsdl:part name="parameters" element="tns:P3Response" />
+  </wsdl:message>
+  <wsdl:message name="LastP3SoapIn">
+    <wsdl:part name="parameters" element="tns:LastP3" />
+  </wsdl:message>
+  <wsdl:message name="LastP3SoapOut">
+    <wsdl:part name="parameters" element="tns:LastP3Response" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP3SoapIn">
+    <wsdl:part name="parameters" element="tns:PreviousP3" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP3SoapOut">
+    <wsdl:part name="parameters" element="tns:PreviousP3Response" />
+  </wsdl:message>
+  <wsdl:message name="LastP3GraphicSoapIn">
+    <wsdl:part name="parameters" element="tns:LastP3Graphic" />
+  </wsdl:message>
+  <wsdl:message name="LastP3GraphicSoapOut">
+    <wsdl:part name="parameters" element="tns:LastP3GraphicResponse" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP3GraphicSoapIn">
+    <wsdl:part name="parameters" element="tns:PreviousP3Graphic" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP3GraphicSoapOut">
+    <wsdl:part name="parameters" element="tns:PreviousP3GraphicResponse" />
+  </wsdl:message>
+  <wsdl:message name="LastP3TimeSoapIn">
+    <wsdl:part name="parameters" element="tns:LastP3Time" />
+  </wsdl:message>
+  <wsdl:message name="LastP3TimeSoapOut">
+    <wsdl:part name="parameters" element="tns:LastP3TimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP3TimeSoapIn">
+    <wsdl:part name="parameters" element="tns:PreviousP3Time" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP3TimeSoapOut">
+    <wsdl:part name="parameters" element="tns:PreviousP3TimeResponse" />
+  </wsdl:message>
+  <wsdl:message name="RaffleCountdownSoapIn">
+    <wsdl:part name="parameters" element="tns:RaffleCountdown" />
+  </wsdl:message>
+  <wsdl:message name="RaffleCountdownSoapOut">
+    <wsdl:part name="parameters" element="tns:RaffleCountdownResponse" />
+  </wsdl:message>
+  <wsdl:message name="PowerballHttpGetIn" />
+  <wsdl:message name="PowerballHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastPowerballTextHttpGetIn" />
+  <wsdl:message name="LastPowerballTextHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="LastPowerballHttpGetIn" />
+  <wsdl:message name="LastPowerballHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="PBDrawDateHttpGetIn" />
+  <wsdl:message name="PBDrawDateHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="JustPBDrawDateHttpGetIn" />
+  <wsdl:message name="JustPBDrawDateHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PBJackpotHttpGetIn" />
+  <wsdl:message name="PBJackpotHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastPowerballGraphicsHttpGetIn" />
+  <wsdl:message name="LastPowerballGraphicsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="JustPBImageHttpGetIn" />
+  <wsdl:message name="JustPBImageHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="MegaMillionsHttpGetIn" />
+  <wsdl:message name="MegaMillionsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastMegaMillionsHttpGetIn" />
+  <wsdl:message name="LastMegaMillionsHttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="MMDrawDateHttpGetIn" />
+  <wsdl:message name="MMDrawDateHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="JustMegaMillionsDrawDateHttpGetIn" />
+  <wsdl:message name="JustMegaMillionsDrawDateHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="MegaMillionsJackpotHttpGetIn" />
+  <wsdl:message name="MegaMillionsJackpotHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastMegaMillionsGraphicsHttpGetIn" />
+  <wsdl:message name="LastMegaMillionsGraphicsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="JustMMImageHttpGetIn" />
+  <wsdl:message name="JustMMImageHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="JustMegaMillionsImageHttpGetIn" />
+  <wsdl:message name="JustMegaMillionsImageHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Cash6HttpGetIn" />
+  <wsdl:message name="Cash6HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastCash6HttpGetIn" />
+  <wsdl:message name="LastCash6HttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Cash6DrawDateHttpGetIn" />
+  <wsdl:message name="Cash6DrawDateHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastCash6DateHttpGetIn" />
+  <wsdl:message name="LastCash6DateHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastCash6GraphicsHttpGetIn" />
+  <wsdl:message name="LastCash6GraphicsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="P5HttpGetIn" />
+  <wsdl:message name="P5HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastP5HttpGetIn" />
+  <wsdl:message name="LastP5HttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="P5DrawDateHttpGetIn" />
+  <wsdl:message name="P5DrawDateHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastP5DateHttpGetIn" />
+  <wsdl:message name="LastP5DateHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastP5GraphicsHttpGetIn" />
+  <wsdl:message name="LastP5GraphicsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="P4HttpGetIn" />
+  <wsdl:message name="P4HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastP4HttpGetIn" />
+  <wsdl:message name="LastP4HttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP4HttpGetIn" />
+  <wsdl:message name="PreviousP4HttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="LastP4GraphicsHttpGetIn" />
+  <wsdl:message name="LastP4GraphicsHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP4GraphicHttpGetIn" />
+  <wsdl:message name="PreviousP4GraphicHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastP4TimeHttpGetIn" />
+  <wsdl:message name="LastP4TimeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP4TimeHttpGetIn" />
+  <wsdl:message name="PreviousP4TimeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="P3HttpGetIn" />
+  <wsdl:message name="P3HttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastP3HttpGetIn" />
+  <wsdl:message name="LastP3HttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP3HttpGetIn" />
+  <wsdl:message name="PreviousP3HttpGetOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="LastP3GraphicHttpGetIn" />
+  <wsdl:message name="LastP3GraphicHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP3GraphicHttpGetIn" />
+  <wsdl:message name="PreviousP3GraphicHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastP3TimeHttpGetIn" />
+  <wsdl:message name="LastP3TimeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP3TimeHttpGetIn" />
+  <wsdl:message name="PreviousP3TimeHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RaffleCountdownHttpGetIn" />
+  <wsdl:message name="RaffleCountdownHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PowerballHttpPostIn" />
+  <wsdl:message name="PowerballHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastPowerballTextHttpPostIn" />
+  <wsdl:message name="LastPowerballTextHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="LastPowerballHttpPostIn" />
+  <wsdl:message name="LastPowerballHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="PBDrawDateHttpPostIn" />
+  <wsdl:message name="PBDrawDateHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="JustPBDrawDateHttpPostIn" />
+  <wsdl:message name="JustPBDrawDateHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PBJackpotHttpPostIn" />
+  <wsdl:message name="PBJackpotHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastPowerballGraphicsHttpPostIn" />
+  <wsdl:message name="LastPowerballGraphicsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="JustPBImageHttpPostIn" />
+  <wsdl:message name="JustPBImageHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="MegaMillionsHttpPostIn" />
+  <wsdl:message name="MegaMillionsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastMegaMillionsHttpPostIn" />
+  <wsdl:message name="LastMegaMillionsHttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="MMDrawDateHttpPostIn" />
+  <wsdl:message name="MMDrawDateHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="JustMegaMillionsDrawDateHttpPostIn" />
+  <wsdl:message name="JustMegaMillionsDrawDateHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="MegaMillionsJackpotHttpPostIn" />
+  <wsdl:message name="MegaMillionsJackpotHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastMegaMillionsGraphicsHttpPostIn" />
+  <wsdl:message name="LastMegaMillionsGraphicsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="JustMMImageHttpPostIn" />
+  <wsdl:message name="JustMMImageHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="JustMegaMillionsImageHttpPostIn" />
+  <wsdl:message name="JustMegaMillionsImageHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="Cash6HttpPostIn" />
+  <wsdl:message name="Cash6HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastCash6HttpPostIn" />
+  <wsdl:message name="LastCash6HttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="Cash6DrawDateHttpPostIn" />
+  <wsdl:message name="Cash6DrawDateHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastCash6DateHttpPostIn" />
+  <wsdl:message name="LastCash6DateHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastCash6GraphicsHttpPostIn" />
+  <wsdl:message name="LastCash6GraphicsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="P5HttpPostIn" />
+  <wsdl:message name="P5HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastP5HttpPostIn" />
+  <wsdl:message name="LastP5HttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="P5DrawDateHttpPostIn" />
+  <wsdl:message name="P5DrawDateHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastP5DateHttpPostIn" />
+  <wsdl:message name="LastP5DateHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastP5GraphicsHttpPostIn" />
+  <wsdl:message name="LastP5GraphicsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="P4HttpPostIn" />
+  <wsdl:message name="P4HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastP4HttpPostIn" />
+  <wsdl:message name="LastP4HttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP4HttpPostIn" />
+  <wsdl:message name="PreviousP4HttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="LastP4GraphicsHttpPostIn" />
+  <wsdl:message name="LastP4GraphicsHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP4GraphicHttpPostIn" />
+  <wsdl:message name="PreviousP4GraphicHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastP4TimeHttpPostIn" />
+  <wsdl:message name="LastP4TimeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP4TimeHttpPostIn" />
+  <wsdl:message name="PreviousP4TimeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="P3HttpPostIn" />
+  <wsdl:message name="P3HttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastP3HttpPostIn" />
+  <wsdl:message name="LastP3HttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP3HttpPostIn" />
+  <wsdl:message name="PreviousP3HttpPostOut">
+    <wsdl:part name="Body" element="tns:DataSet" />
+  </wsdl:message>
+  <wsdl:message name="LastP3GraphicHttpPostIn" />
+  <wsdl:message name="LastP3GraphicHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP3GraphicHttpPostIn" />
+  <wsdl:message name="PreviousP3GraphicHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="LastP3TimeHttpPostIn" />
+  <wsdl:message name="LastP3TimeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="PreviousP3TimeHttpPostIn" />
+  <wsdl:message name="PreviousP3TimeHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="RaffleCountdownHttpPostIn" />
+  <wsdl:message name="RaffleCountdownHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="_getSoap">
+    <wsdl:operation name="Powerball">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball numbers as a simple string.</wsdl:documentation>
+      <wsdl:input message="tns:PowerballSoapIn" />
+      <wsdl:output message="tns:PowerballSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerballText">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastPowerballTextSoapIn" />
+      <wsdl:output message="tns:LastPowerballTextSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerball">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastPowerballSoapIn" />
+      <wsdl:output message="tns:LastPowerballSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PBDrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball draw date.</wsdl:documentation>
+      <wsdl:input message="tns:PBDrawDateSoapIn" />
+      <wsdl:output message="tns:PBDrawDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JustPBDrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball update date.</wsdl:documentation>
+      <wsdl:input message="tns:JustPBDrawDateSoapIn" />
+      <wsdl:output message="tns:JustPBDrawDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PBJackpot">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball jackpot amount</wsdl:documentation>
+      <wsdl:input message="tns:PBJackpotSoapIn" />
+      <wsdl:output message="tns:PBJackpotSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerballGraphics">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball numbers with image tags.</wsdl:documentation>
+      <wsdl:input message="tns:LastPowerballGraphicsSoapIn" />
+      <wsdl:output message="tns:LastPowerballGraphicsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JustPBImage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball jackpot amount with an IMAGE</wsdl:documentation>
+      <wsdl:input message="tns:JustPBImageSoapIn" />
+      <wsdl:output message="tns:JustPBImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MegaMillions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions numbers as a simple string.</wsdl:documentation>
+      <wsdl:input message="tns:MegaMillionsSoapIn" />
+      <wsdl:output message="tns:MegaMillionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastMegaMillions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastMegaMillionsSoapIn" />
+      <wsdl:output message="tns:LastMegaMillionsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MMDrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions draw date.</wsdl:documentation>
+      <wsdl:input message="tns:MMDrawDateSoapIn" />
+      <wsdl:output message="tns:MMDrawDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JustMegaMillionsDrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions update date.</wsdl:documentation>
+      <wsdl:input message="tns:JustMegaMillionsDrawDateSoapIn" />
+      <wsdl:output message="tns:JustMegaMillionsDrawDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MegaMillionsJackpot">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions jackpot amount</wsdl:documentation>
+      <wsdl:input message="tns:MegaMillionsJackpotSoapIn" />
+      <wsdl:output message="tns:MegaMillionsJackpotSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastMegaMillionsGraphics">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions numbers with image tags.</wsdl:documentation>
+      <wsdl:input message="tns:LastMegaMillionsGraphicsSoapIn" />
+      <wsdl:output message="tns:LastMegaMillionsGraphicsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JustMMImage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions jackpot amount with an IMAGE</wsdl:documentation>
+      <wsdl:input message="tns:JustMMImageSoapIn" />
+      <wsdl:output message="tns:JustMMImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JustMegaMillionsImage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions JACKPOT amount with an IMAGE</wsdl:documentation>
+      <wsdl:input message="tns:JustMegaMillionsImageSoapIn" />
+      <wsdl:output message="tns:JustMegaMillionsImageSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cash6">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Cash 6 numbers as a simple string.</wsdl:documentation>
+      <wsdl:input message="tns:Cash6SoapIn" />
+      <wsdl:output message="tns:Cash6SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Cash 6 numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastCash6SoapIn" />
+      <wsdl:output message="tns:LastCash6SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cash6DrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Cash 6 draw date.</wsdl:documentation>
+      <wsdl:input message="tns:Cash6DrawDateSoapIn" />
+      <wsdl:output message="tns:Cash6DrawDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6Date">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Cash 6 update date.</wsdl:documentation>
+      <wsdl:input message="tns:LastCash6DateSoapIn" />
+      <wsdl:output message="tns:LastCash6DateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6Graphics">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Cash 6 numbers with image tags.</wsdl:documentation>
+      <wsdl:input message="tns:LastCash6GraphicsSoapIn" />
+      <wsdl:output message="tns:LastCash6GraphicsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="P5">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PALMETTO 5 NUMBERS as a simple string</wsdl:documentation>
+      <wsdl:input message="tns:P5SoapIn" />
+      <wsdl:output message="tns:P5SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP5">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Palmetto 5 numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastP5SoapIn" />
+      <wsdl:output message="tns:LastP5SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="P5DrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Palmetto 5 draw date.</wsdl:documentation>
+      <wsdl:input message="tns:P5DrawDateSoapIn" />
+      <wsdl:output message="tns:P5DrawDateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP5Date">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Palmetto 5 update date.</wsdl:documentation>
+      <wsdl:input message="tns:LastP5DateSoapIn" />
+      <wsdl:output message="tns:LastP5DateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP5Graphics">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Palmetto 5 numbers with image tags.</wsdl:documentation>
+      <wsdl:input message="tns:LastP5GraphicsSoapIn" />
+      <wsdl:output message="tns:LastP5GraphicsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="P4">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Pick4 NUMBERS as a simple string</wsdl:documentation>
+      <wsdl:input message="tns:P4SoapIn" />
+      <wsdl:output message="tns:P4SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP4">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Pick 4 numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastP4SoapIn" />
+      <wsdl:output message="tns:LastP4SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the 2nd latest PICK 4 NUMBERS</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP4SoapIn" />
+      <wsdl:output message="tns:PreviousP4SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP4Graphics">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PICK 4 NUMBERS WITH GRAPHICS</wsdl:documentation>
+      <wsdl:input message="tns:LastP4GraphicsSoapIn" />
+      <wsdl:output message="tns:LastP4GraphicsSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4Graphic">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the 2nd latest PICK 4 NUMBERS WITH GRAPHICS</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP4GraphicSoapIn" />
+      <wsdl:output message="tns:PreviousP4GraphicSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP4Time">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PICK 4 DRAWCATEGORY</wsdl:documentation>
+      <wsdl:input message="tns:LastP4TimeSoapIn" />
+      <wsdl:output message="tns:LastP4TimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4Time">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the Previous PICK 4 DRAWCATEGORY</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP4TimeSoapIn" />
+      <wsdl:output message="tns:PreviousP4TimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="P3">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Pick3 NUMBERS as a simple string</wsdl:documentation>
+      <wsdl:input message="tns:P3SoapIn" />
+      <wsdl:output message="tns:P3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP3">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PICK 3 NUMBERS as XML</wsdl:documentation>
+      <wsdl:input message="tns:LastP3SoapIn" />
+      <wsdl:output message="tns:LastP3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the 2nd latest PICK 3 NUMBERS as XML</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP3SoapIn" />
+      <wsdl:output message="tns:PreviousP3SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP3Graphic">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PICK 3 NUMBERS WITH GRAPHICS</wsdl:documentation>
+      <wsdl:input message="tns:LastP3GraphicSoapIn" />
+      <wsdl:output message="tns:LastP3GraphicSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3Graphic">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the 2nd latest PICK 3 NUMBERS WITH GRAPHICS</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP3GraphicSoapIn" />
+      <wsdl:output message="tns:PreviousP3GraphicSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP3Time">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PICK 3 DRAWCATEGORY</wsdl:documentation>
+      <wsdl:input message="tns:LastP3TimeSoapIn" />
+      <wsdl:output message="tns:LastP3TimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3Time">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the Previous PICK 3 DRAWCATEGORY</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP3TimeSoapIn" />
+      <wsdl:output message="tns:PreviousP3TimeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RaffleCountdown">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the RAFFLE TICKET COUNT DOWN</wsdl:documentation>
+      <wsdl:input message="tns:RaffleCountdownSoapIn" />
+      <wsdl:output message="tns:RaffleCountdownSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="_getHttpGet">
+    <wsdl:operation name="Powerball">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball numbers as a simple string.</wsdl:documentation>
+      <wsdl:input message="tns:PowerballHttpGetIn" />
+      <wsdl:output message="tns:PowerballHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerballText">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastPowerballTextHttpGetIn" />
+      <wsdl:output message="tns:LastPowerballTextHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerball">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastPowerballHttpGetIn" />
+      <wsdl:output message="tns:LastPowerballHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PBDrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball draw date.</wsdl:documentation>
+      <wsdl:input message="tns:PBDrawDateHttpGetIn" />
+      <wsdl:output message="tns:PBDrawDateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JustPBDrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball update date.</wsdl:documentation>
+      <wsdl:input message="tns:JustPBDrawDateHttpGetIn" />
+      <wsdl:output message="tns:JustPBDrawDateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PBJackpot">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball jackpot amount</wsdl:documentation>
+      <wsdl:input message="tns:PBJackpotHttpGetIn" />
+      <wsdl:output message="tns:PBJackpotHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerballGraphics">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball numbers with image tags.</wsdl:documentation>
+      <wsdl:input message="tns:LastPowerballGraphicsHttpGetIn" />
+      <wsdl:output message="tns:LastPowerballGraphicsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JustPBImage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball jackpot amount with an IMAGE</wsdl:documentation>
+      <wsdl:input message="tns:JustPBImageHttpGetIn" />
+      <wsdl:output message="tns:JustPBImageHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MegaMillions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions numbers as a simple string.</wsdl:documentation>
+      <wsdl:input message="tns:MegaMillionsHttpGetIn" />
+      <wsdl:output message="tns:MegaMillionsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastMegaMillions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastMegaMillionsHttpGetIn" />
+      <wsdl:output message="tns:LastMegaMillionsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MMDrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions draw date.</wsdl:documentation>
+      <wsdl:input message="tns:MMDrawDateHttpGetIn" />
+      <wsdl:output message="tns:MMDrawDateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JustMegaMillionsDrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions update date.</wsdl:documentation>
+      <wsdl:input message="tns:JustMegaMillionsDrawDateHttpGetIn" />
+      <wsdl:output message="tns:JustMegaMillionsDrawDateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MegaMillionsJackpot">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions jackpot amount</wsdl:documentation>
+      <wsdl:input message="tns:MegaMillionsJackpotHttpGetIn" />
+      <wsdl:output message="tns:MegaMillionsJackpotHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastMegaMillionsGraphics">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions numbers with image tags.</wsdl:documentation>
+      <wsdl:input message="tns:LastMegaMillionsGraphicsHttpGetIn" />
+      <wsdl:output message="tns:LastMegaMillionsGraphicsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JustMMImage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions jackpot amount with an IMAGE</wsdl:documentation>
+      <wsdl:input message="tns:JustMMImageHttpGetIn" />
+      <wsdl:output message="tns:JustMMImageHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JustMegaMillionsImage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions JACKPOT amount with an IMAGE</wsdl:documentation>
+      <wsdl:input message="tns:JustMegaMillionsImageHttpGetIn" />
+      <wsdl:output message="tns:JustMegaMillionsImageHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cash6">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Cash 6 numbers as a simple string.</wsdl:documentation>
+      <wsdl:input message="tns:Cash6HttpGetIn" />
+      <wsdl:output message="tns:Cash6HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Cash 6 numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastCash6HttpGetIn" />
+      <wsdl:output message="tns:LastCash6HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cash6DrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Cash 6 draw date.</wsdl:documentation>
+      <wsdl:input message="tns:Cash6DrawDateHttpGetIn" />
+      <wsdl:output message="tns:Cash6DrawDateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6Date">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Cash 6 update date.</wsdl:documentation>
+      <wsdl:input message="tns:LastCash6DateHttpGetIn" />
+      <wsdl:output message="tns:LastCash6DateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6Graphics">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Cash 6 numbers with image tags.</wsdl:documentation>
+      <wsdl:input message="tns:LastCash6GraphicsHttpGetIn" />
+      <wsdl:output message="tns:LastCash6GraphicsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="P5">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PALMETTO 5 NUMBERS as a simple string</wsdl:documentation>
+      <wsdl:input message="tns:P5HttpGetIn" />
+      <wsdl:output message="tns:P5HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP5">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Palmetto 5 numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastP5HttpGetIn" />
+      <wsdl:output message="tns:LastP5HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="P5DrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Palmetto 5 draw date.</wsdl:documentation>
+      <wsdl:input message="tns:P5DrawDateHttpGetIn" />
+      <wsdl:output message="tns:P5DrawDateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP5Date">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Palmetto 5 update date.</wsdl:documentation>
+      <wsdl:input message="tns:LastP5DateHttpGetIn" />
+      <wsdl:output message="tns:LastP5DateHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP5Graphics">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Palmetto 5 numbers with image tags.</wsdl:documentation>
+      <wsdl:input message="tns:LastP5GraphicsHttpGetIn" />
+      <wsdl:output message="tns:LastP5GraphicsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="P4">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Pick4 NUMBERS as a simple string</wsdl:documentation>
+      <wsdl:input message="tns:P4HttpGetIn" />
+      <wsdl:output message="tns:P4HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP4">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Pick 4 numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastP4HttpGetIn" />
+      <wsdl:output message="tns:LastP4HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the 2nd latest PICK 4 NUMBERS</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP4HttpGetIn" />
+      <wsdl:output message="tns:PreviousP4HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP4Graphics">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PICK 4 NUMBERS WITH GRAPHICS</wsdl:documentation>
+      <wsdl:input message="tns:LastP4GraphicsHttpGetIn" />
+      <wsdl:output message="tns:LastP4GraphicsHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4Graphic">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the 2nd latest PICK 4 NUMBERS WITH GRAPHICS</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP4GraphicHttpGetIn" />
+      <wsdl:output message="tns:PreviousP4GraphicHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP4Time">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PICK 4 DRAWCATEGORY</wsdl:documentation>
+      <wsdl:input message="tns:LastP4TimeHttpGetIn" />
+      <wsdl:output message="tns:LastP4TimeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4Time">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the Previous PICK 4 DRAWCATEGORY</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP4TimeHttpGetIn" />
+      <wsdl:output message="tns:PreviousP4TimeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="P3">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Pick3 NUMBERS as a simple string</wsdl:documentation>
+      <wsdl:input message="tns:P3HttpGetIn" />
+      <wsdl:output message="tns:P3HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP3">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PICK 3 NUMBERS as XML</wsdl:documentation>
+      <wsdl:input message="tns:LastP3HttpGetIn" />
+      <wsdl:output message="tns:LastP3HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the 2nd latest PICK 3 NUMBERS as XML</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP3HttpGetIn" />
+      <wsdl:output message="tns:PreviousP3HttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP3Graphic">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PICK 3 NUMBERS WITH GRAPHICS</wsdl:documentation>
+      <wsdl:input message="tns:LastP3GraphicHttpGetIn" />
+      <wsdl:output message="tns:LastP3GraphicHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3Graphic">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the 2nd latest PICK 3 NUMBERS WITH GRAPHICS</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP3GraphicHttpGetIn" />
+      <wsdl:output message="tns:PreviousP3GraphicHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP3Time">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PICK 3 DRAWCATEGORY</wsdl:documentation>
+      <wsdl:input message="tns:LastP3TimeHttpGetIn" />
+      <wsdl:output message="tns:LastP3TimeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3Time">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the Previous PICK 3 DRAWCATEGORY</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP3TimeHttpGetIn" />
+      <wsdl:output message="tns:PreviousP3TimeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RaffleCountdown">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the RAFFLE TICKET COUNT DOWN</wsdl:documentation>
+      <wsdl:input message="tns:RaffleCountdownHttpGetIn" />
+      <wsdl:output message="tns:RaffleCountdownHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="_getHttpPost">
+    <wsdl:operation name="Powerball">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball numbers as a simple string.</wsdl:documentation>
+      <wsdl:input message="tns:PowerballHttpPostIn" />
+      <wsdl:output message="tns:PowerballHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerballText">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastPowerballTextHttpPostIn" />
+      <wsdl:output message="tns:LastPowerballTextHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerball">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastPowerballHttpPostIn" />
+      <wsdl:output message="tns:LastPowerballHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PBDrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball draw date.</wsdl:documentation>
+      <wsdl:input message="tns:PBDrawDateHttpPostIn" />
+      <wsdl:output message="tns:PBDrawDateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JustPBDrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball update date.</wsdl:documentation>
+      <wsdl:input message="tns:JustPBDrawDateHttpPostIn" />
+      <wsdl:output message="tns:JustPBDrawDateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PBJackpot">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball jackpot amount</wsdl:documentation>
+      <wsdl:input message="tns:PBJackpotHttpPostIn" />
+      <wsdl:output message="tns:PBJackpotHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerballGraphics">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball numbers with image tags.</wsdl:documentation>
+      <wsdl:input message="tns:LastPowerballGraphicsHttpPostIn" />
+      <wsdl:output message="tns:LastPowerballGraphicsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JustPBImage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Powerball jackpot amount with an IMAGE</wsdl:documentation>
+      <wsdl:input message="tns:JustPBImageHttpPostIn" />
+      <wsdl:output message="tns:JustPBImageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MegaMillions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions numbers as a simple string.</wsdl:documentation>
+      <wsdl:input message="tns:MegaMillionsHttpPostIn" />
+      <wsdl:output message="tns:MegaMillionsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastMegaMillions">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastMegaMillionsHttpPostIn" />
+      <wsdl:output message="tns:LastMegaMillionsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MMDrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions draw date.</wsdl:documentation>
+      <wsdl:input message="tns:MMDrawDateHttpPostIn" />
+      <wsdl:output message="tns:MMDrawDateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JustMegaMillionsDrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions update date.</wsdl:documentation>
+      <wsdl:input message="tns:JustMegaMillionsDrawDateHttpPostIn" />
+      <wsdl:output message="tns:JustMegaMillionsDrawDateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="MegaMillionsJackpot">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions jackpot amount</wsdl:documentation>
+      <wsdl:input message="tns:MegaMillionsJackpotHttpPostIn" />
+      <wsdl:output message="tns:MegaMillionsJackpotHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastMegaMillionsGraphics">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions numbers with image tags.</wsdl:documentation>
+      <wsdl:input message="tns:LastMegaMillionsGraphicsHttpPostIn" />
+      <wsdl:output message="tns:LastMegaMillionsGraphicsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JustMMImage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions jackpot amount with an IMAGE</wsdl:documentation>
+      <wsdl:input message="tns:JustMMImageHttpPostIn" />
+      <wsdl:output message="tns:JustMMImageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="JustMegaMillionsImage">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest MegaMillions JACKPOT amount with an IMAGE</wsdl:documentation>
+      <wsdl:input message="tns:JustMegaMillionsImageHttpPostIn" />
+      <wsdl:output message="tns:JustMegaMillionsImageHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cash6">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Cash 6 numbers as a simple string.</wsdl:documentation>
+      <wsdl:input message="tns:Cash6HttpPostIn" />
+      <wsdl:output message="tns:Cash6HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Cash 6 numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastCash6HttpPostIn" />
+      <wsdl:output message="tns:LastCash6HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Cash6DrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Cash 6 draw date.</wsdl:documentation>
+      <wsdl:input message="tns:Cash6DrawDateHttpPostIn" />
+      <wsdl:output message="tns:Cash6DrawDateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6Date">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Cash 6 update date.</wsdl:documentation>
+      <wsdl:input message="tns:LastCash6DateHttpPostIn" />
+      <wsdl:output message="tns:LastCash6DateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6Graphics">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Cash 6 numbers with image tags.</wsdl:documentation>
+      <wsdl:input message="tns:LastCash6GraphicsHttpPostIn" />
+      <wsdl:output message="tns:LastCash6GraphicsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="P5">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PALMETTO 5 NUMBERS as a simple string</wsdl:documentation>
+      <wsdl:input message="tns:P5HttpPostIn" />
+      <wsdl:output message="tns:P5HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP5">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Palmetto 5 numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastP5HttpPostIn" />
+      <wsdl:output message="tns:LastP5HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="P5DrawDate">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Palmetto 5 draw date.</wsdl:documentation>
+      <wsdl:input message="tns:P5DrawDateHttpPostIn" />
+      <wsdl:output message="tns:P5DrawDateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP5Date">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Palmetto 5 update date.</wsdl:documentation>
+      <wsdl:input message="tns:LastP5DateHttpPostIn" />
+      <wsdl:output message="tns:LastP5DateHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP5Graphics">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Palmetto 5 numbers with image tags.</wsdl:documentation>
+      <wsdl:input message="tns:LastP5GraphicsHttpPostIn" />
+      <wsdl:output message="tns:LastP5GraphicsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="P4">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Pick4 NUMBERS as a simple string</wsdl:documentation>
+      <wsdl:input message="tns:P4HttpPostIn" />
+      <wsdl:output message="tns:P4HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP4">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Pick 4 numbers as XML.</wsdl:documentation>
+      <wsdl:input message="tns:LastP4HttpPostIn" />
+      <wsdl:output message="tns:LastP4HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the 2nd latest PICK 4 NUMBERS</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP4HttpPostIn" />
+      <wsdl:output message="tns:PreviousP4HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP4Graphics">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PICK 4 NUMBERS WITH GRAPHICS</wsdl:documentation>
+      <wsdl:input message="tns:LastP4GraphicsHttpPostIn" />
+      <wsdl:output message="tns:LastP4GraphicsHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4Graphic">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the 2nd latest PICK 4 NUMBERS WITH GRAPHICS</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP4GraphicHttpPostIn" />
+      <wsdl:output message="tns:PreviousP4GraphicHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP4Time">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PICK 4 DRAWCATEGORY</wsdl:documentation>
+      <wsdl:input message="tns:LastP4TimeHttpPostIn" />
+      <wsdl:output message="tns:LastP4TimeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4Time">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the Previous PICK 4 DRAWCATEGORY</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP4TimeHttpPostIn" />
+      <wsdl:output message="tns:PreviousP4TimeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="P3">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest Pick3 NUMBERS as a simple string</wsdl:documentation>
+      <wsdl:input message="tns:P3HttpPostIn" />
+      <wsdl:output message="tns:P3HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP3">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PICK 3 NUMBERS as XML</wsdl:documentation>
+      <wsdl:input message="tns:LastP3HttpPostIn" />
+      <wsdl:output message="tns:LastP3HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the 2nd latest PICK 3 NUMBERS as XML</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP3HttpPostIn" />
+      <wsdl:output message="tns:PreviousP3HttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP3Graphic">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PICK 3 NUMBERS WITH GRAPHICS</wsdl:documentation>
+      <wsdl:input message="tns:LastP3GraphicHttpPostIn" />
+      <wsdl:output message="tns:LastP3GraphicHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3Graphic">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the 2nd latest PICK 3 NUMBERS WITH GRAPHICS</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP3GraphicHttpPostIn" />
+      <wsdl:output message="tns:PreviousP3GraphicHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LastP3Time">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the latest PICK 3 DRAWCATEGORY</wsdl:documentation>
+      <wsdl:input message="tns:LastP3TimeHttpPostIn" />
+      <wsdl:output message="tns:LastP3TimeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3Time">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the Previous PICK 3 DRAWCATEGORY</wsdl:documentation>
+      <wsdl:input message="tns:PreviousP3TimeHttpPostIn" />
+      <wsdl:output message="tns:PreviousP3TimeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="RaffleCountdown">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Returns the RAFFLE TICKET COUNT DOWN</wsdl:documentation>
+      <wsdl:input message="tns:RaffleCountdownHttpPostIn" />
+      <wsdl:output message="tns:RaffleCountdownHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="_getSoap" type="tns:_getSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Powerball">
+      <soap:operation soapAction="http://tempuri.org/Powerball" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerballText">
+      <soap:operation soapAction="http://tempuri.org/LastPowerballText" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerball">
+      <soap:operation soapAction="http://tempuri.org/LastPowerball" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PBDrawDate">
+      <soap:operation soapAction="http://tempuri.org/PBDrawDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustPBDrawDate">
+      <soap:operation soapAction="http://tempuri.org/JustPBDrawDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PBJackpot">
+      <soap:operation soapAction="http://tempuri.org/PBJackpot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerballGraphics">
+      <soap:operation soapAction="http://tempuri.org/LastPowerballGraphics" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustPBImage">
+      <soap:operation soapAction="http://tempuri.org/JustPBImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MegaMillions">
+      <soap:operation soapAction="http://tempuri.org/MegaMillions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastMegaMillions">
+      <soap:operation soapAction="http://tempuri.org/LastMegaMillions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MMDrawDate">
+      <soap:operation soapAction="http://tempuri.org/MMDrawDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustMegaMillionsDrawDate">
+      <soap:operation soapAction="http://tempuri.org/JustMegaMillionsDrawDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MegaMillionsJackpot">
+      <soap:operation soapAction="http://tempuri.org/MegaMillionsJackpot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastMegaMillionsGraphics">
+      <soap:operation soapAction="http://tempuri.org/LastMegaMillionsGraphics" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustMMImage">
+      <soap:operation soapAction="http://tempuri.org/JustMMImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustMegaMillionsImage">
+      <soap:operation soapAction="http://tempuri.org/JustMegaMillionsImage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cash6">
+      <soap:operation soapAction="http://tempuri.org/Cash6" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6">
+      <soap:operation soapAction="http://tempuri.org/LastCash6" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cash6DrawDate">
+      <soap:operation soapAction="http://tempuri.org/Cash6DrawDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6Date">
+      <soap:operation soapAction="http://tempuri.org/LastCash6Date" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6Graphics">
+      <soap:operation soapAction="http://tempuri.org/LastCash6Graphics" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P5">
+      <soap:operation soapAction="http://tempuri.org/P5" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP5">
+      <soap:operation soapAction="http://tempuri.org/LastP5" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P5DrawDate">
+      <soap:operation soapAction="http://tempuri.org/P5DrawDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP5Date">
+      <soap:operation soapAction="http://tempuri.org/LastP5Date" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP5Graphics">
+      <soap:operation soapAction="http://tempuri.org/LastP5Graphics" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P4">
+      <soap:operation soapAction="http://tempuri.org/P4" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP4">
+      <soap:operation soapAction="http://tempuri.org/LastP4" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4">
+      <soap:operation soapAction="http://tempuri.org/PreviousP4" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP4Graphics">
+      <soap:operation soapAction="http://tempuri.org/LastP4Graphics" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4Graphic">
+      <soap:operation soapAction="http://tempuri.org/PreviousP4Graphic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP4Time">
+      <soap:operation soapAction="http://tempuri.org/LastP4Time" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4Time">
+      <soap:operation soapAction="http://tempuri.org/PreviousP4Time" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P3">
+      <soap:operation soapAction="http://tempuri.org/P3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP3">
+      <soap:operation soapAction="http://tempuri.org/LastP3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3">
+      <soap:operation soapAction="http://tempuri.org/PreviousP3" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP3Graphic">
+      <soap:operation soapAction="http://tempuri.org/LastP3Graphic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3Graphic">
+      <soap:operation soapAction="http://tempuri.org/PreviousP3Graphic" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP3Time">
+      <soap:operation soapAction="http://tempuri.org/LastP3Time" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3Time">
+      <soap:operation soapAction="http://tempuri.org/PreviousP3Time" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RaffleCountdown">
+      <soap:operation soapAction="http://tempuri.org/RaffleCountdown" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="_getSoap12" type="tns:_getSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Powerball">
+      <soap12:operation soapAction="http://tempuri.org/Powerball" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerballText">
+      <soap12:operation soapAction="http://tempuri.org/LastPowerballText" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerball">
+      <soap12:operation soapAction="http://tempuri.org/LastPowerball" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PBDrawDate">
+      <soap12:operation soapAction="http://tempuri.org/PBDrawDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustPBDrawDate">
+      <soap12:operation soapAction="http://tempuri.org/JustPBDrawDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PBJackpot">
+      <soap12:operation soapAction="http://tempuri.org/PBJackpot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerballGraphics">
+      <soap12:operation soapAction="http://tempuri.org/LastPowerballGraphics" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustPBImage">
+      <soap12:operation soapAction="http://tempuri.org/JustPBImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MegaMillions">
+      <soap12:operation soapAction="http://tempuri.org/MegaMillions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastMegaMillions">
+      <soap12:operation soapAction="http://tempuri.org/LastMegaMillions" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MMDrawDate">
+      <soap12:operation soapAction="http://tempuri.org/MMDrawDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustMegaMillionsDrawDate">
+      <soap12:operation soapAction="http://tempuri.org/JustMegaMillionsDrawDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MegaMillionsJackpot">
+      <soap12:operation soapAction="http://tempuri.org/MegaMillionsJackpot" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastMegaMillionsGraphics">
+      <soap12:operation soapAction="http://tempuri.org/LastMegaMillionsGraphics" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustMMImage">
+      <soap12:operation soapAction="http://tempuri.org/JustMMImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustMegaMillionsImage">
+      <soap12:operation soapAction="http://tempuri.org/JustMegaMillionsImage" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cash6">
+      <soap12:operation soapAction="http://tempuri.org/Cash6" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6">
+      <soap12:operation soapAction="http://tempuri.org/LastCash6" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cash6DrawDate">
+      <soap12:operation soapAction="http://tempuri.org/Cash6DrawDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6Date">
+      <soap12:operation soapAction="http://tempuri.org/LastCash6Date" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6Graphics">
+      <soap12:operation soapAction="http://tempuri.org/LastCash6Graphics" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P5">
+      <soap12:operation soapAction="http://tempuri.org/P5" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP5">
+      <soap12:operation soapAction="http://tempuri.org/LastP5" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P5DrawDate">
+      <soap12:operation soapAction="http://tempuri.org/P5DrawDate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP5Date">
+      <soap12:operation soapAction="http://tempuri.org/LastP5Date" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP5Graphics">
+      <soap12:operation soapAction="http://tempuri.org/LastP5Graphics" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P4">
+      <soap12:operation soapAction="http://tempuri.org/P4" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP4">
+      <soap12:operation soapAction="http://tempuri.org/LastP4" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4">
+      <soap12:operation soapAction="http://tempuri.org/PreviousP4" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP4Graphics">
+      <soap12:operation soapAction="http://tempuri.org/LastP4Graphics" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4Graphic">
+      <soap12:operation soapAction="http://tempuri.org/PreviousP4Graphic" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP4Time">
+      <soap12:operation soapAction="http://tempuri.org/LastP4Time" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4Time">
+      <soap12:operation soapAction="http://tempuri.org/PreviousP4Time" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P3">
+      <soap12:operation soapAction="http://tempuri.org/P3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP3">
+      <soap12:operation soapAction="http://tempuri.org/LastP3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3">
+      <soap12:operation soapAction="http://tempuri.org/PreviousP3" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP3Graphic">
+      <soap12:operation soapAction="http://tempuri.org/LastP3Graphic" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3Graphic">
+      <soap12:operation soapAction="http://tempuri.org/PreviousP3Graphic" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP3Time">
+      <soap12:operation soapAction="http://tempuri.org/LastP3Time" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3Time">
+      <soap12:operation soapAction="http://tempuri.org/PreviousP3Time" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RaffleCountdown">
+      <soap12:operation soapAction="http://tempuri.org/RaffleCountdown" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="_getHttpGet" type="tns:_getHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="Powerball">
+      <http:operation location="/Powerball" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerballText">
+      <http:operation location="/LastPowerballText" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerball">
+      <http:operation location="/LastPowerball" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PBDrawDate">
+      <http:operation location="/PBDrawDate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustPBDrawDate">
+      <http:operation location="/JustPBDrawDate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PBJackpot">
+      <http:operation location="/PBJackpot" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerballGraphics">
+      <http:operation location="/LastPowerballGraphics" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustPBImage">
+      <http:operation location="/JustPBImage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MegaMillions">
+      <http:operation location="/MegaMillions" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastMegaMillions">
+      <http:operation location="/LastMegaMillions" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MMDrawDate">
+      <http:operation location="/MMDrawDate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustMegaMillionsDrawDate">
+      <http:operation location="/JustMegaMillionsDrawDate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MegaMillionsJackpot">
+      <http:operation location="/MegaMillionsJackpot" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastMegaMillionsGraphics">
+      <http:operation location="/LastMegaMillionsGraphics" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustMMImage">
+      <http:operation location="/JustMMImage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustMegaMillionsImage">
+      <http:operation location="/JustMegaMillionsImage" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cash6">
+      <http:operation location="/Cash6" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6">
+      <http:operation location="/LastCash6" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cash6DrawDate">
+      <http:operation location="/Cash6DrawDate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6Date">
+      <http:operation location="/LastCash6Date" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6Graphics">
+      <http:operation location="/LastCash6Graphics" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P5">
+      <http:operation location="/P5" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP5">
+      <http:operation location="/LastP5" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P5DrawDate">
+      <http:operation location="/P5DrawDate" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP5Date">
+      <http:operation location="/LastP5Date" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP5Graphics">
+      <http:operation location="/LastP5Graphics" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P4">
+      <http:operation location="/P4" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP4">
+      <http:operation location="/LastP4" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4">
+      <http:operation location="/PreviousP4" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP4Graphics">
+      <http:operation location="/LastP4Graphics" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4Graphic">
+      <http:operation location="/PreviousP4Graphic" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP4Time">
+      <http:operation location="/LastP4Time" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4Time">
+      <http:operation location="/PreviousP4Time" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P3">
+      <http:operation location="/P3" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP3">
+      <http:operation location="/LastP3" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3">
+      <http:operation location="/PreviousP3" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP3Graphic">
+      <http:operation location="/LastP3Graphic" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3Graphic">
+      <http:operation location="/PreviousP3Graphic" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP3Time">
+      <http:operation location="/LastP3Time" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3Time">
+      <http:operation location="/PreviousP3Time" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RaffleCountdown">
+      <http:operation location="/RaffleCountdown" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="_getHttpPost" type="tns:_getHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="Powerball">
+      <http:operation location="/Powerball" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerballText">
+      <http:operation location="/LastPowerballText" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerball">
+      <http:operation location="/LastPowerball" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PBDrawDate">
+      <http:operation location="/PBDrawDate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustPBDrawDate">
+      <http:operation location="/JustPBDrawDate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PBJackpot">
+      <http:operation location="/PBJackpot" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastPowerballGraphics">
+      <http:operation location="/LastPowerballGraphics" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustPBImage">
+      <http:operation location="/JustPBImage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MegaMillions">
+      <http:operation location="/MegaMillions" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastMegaMillions">
+      <http:operation location="/LastMegaMillions" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MMDrawDate">
+      <http:operation location="/MMDrawDate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustMegaMillionsDrawDate">
+      <http:operation location="/JustMegaMillionsDrawDate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MegaMillionsJackpot">
+      <http:operation location="/MegaMillionsJackpot" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastMegaMillionsGraphics">
+      <http:operation location="/LastMegaMillionsGraphics" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustMMImage">
+      <http:operation location="/JustMMImage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="JustMegaMillionsImage">
+      <http:operation location="/JustMegaMillionsImage" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cash6">
+      <http:operation location="/Cash6" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6">
+      <http:operation location="/LastCash6" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cash6DrawDate">
+      <http:operation location="/Cash6DrawDate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6Date">
+      <http:operation location="/LastCash6Date" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastCash6Graphics">
+      <http:operation location="/LastCash6Graphics" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P5">
+      <http:operation location="/P5" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP5">
+      <http:operation location="/LastP5" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P5DrawDate">
+      <http:operation location="/P5DrawDate" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP5Date">
+      <http:operation location="/LastP5Date" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP5Graphics">
+      <http:operation location="/LastP5Graphics" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P4">
+      <http:operation location="/P4" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP4">
+      <http:operation location="/LastP4" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4">
+      <http:operation location="/PreviousP4" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP4Graphics">
+      <http:operation location="/LastP4Graphics" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4Graphic">
+      <http:operation location="/PreviousP4Graphic" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP4Time">
+      <http:operation location="/LastP4Time" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP4Time">
+      <http:operation location="/PreviousP4Time" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="P3">
+      <http:operation location="/P3" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP3">
+      <http:operation location="/LastP3" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3">
+      <http:operation location="/PreviousP3" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP3Graphic">
+      <http:operation location="/LastP3Graphic" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3Graphic">
+      <http:operation location="/PreviousP3Graphic" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LastP3Time">
+      <http:operation location="/LastP3Time" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PreviousP3Time">
+      <http:operation location="/PreviousP3Time" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RaffleCountdown">
+      <http:operation location="/RaffleCountdown" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="_get">
+    <wsdl:port name="_getSoap" binding="tns:_getSoap">
+      <soap:address location="http://www.sceducationlottery.com/webservices/get.asmx" />
+    </wsdl:port>
+    <wsdl:port name="_getSoap12" binding="tns:_getSoap12">
+      <soap12:address location="http://www.sceducationlottery.com/webservices/get.asmx" />
+    </wsdl:port>
+    <wsdl:port name="_getHttpGet" binding="tns:_getHttpGet">
+      <http:address location="http://www.sceducationlottery.com/webservices/get.asmx" />
+    </wsdl:port>
+    <wsdl:port name="_getHttpPost" binding="tns:_getHttpPost">
+      <http:address location="http://www.sceducationlottery.com/webservices/get.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

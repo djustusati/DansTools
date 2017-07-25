@@ -1,0 +1,38 @@
+﻿<%@ Master Language="VB" AutoEventWireup="false" CodeBehind="masterA.master.vb" Inherits="DansTools.masterA" %>
+
+<%@ Register src="../usercontrols/ctlMasterMenu.ascx" tagname="ctlMasterMenu" tagprefix="uc1" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Styles.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table align="left" class="style1">
+        <tr>
+            <td style="text-align: left; vertical-align: top;">
+                <div id="menuPane">
+                    <asp:ScriptManager ID="ScriptManager1" runat="server" />
+                    <uc1:ctlMasterMenu ID="ctlMasterMenu1" runat="server" />
+                </div>
+            </td>
+            <td id="contentPane">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>
